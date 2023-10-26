@@ -10,7 +10,7 @@ const config = {
   tagline: 'EgoExo4D Documentation',
   favicon: 'img/favicon.ico',
   url: 'https://fairinternal.github.io/',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   organizationName: 'fairinternal',
   projectName: 'Ego-Exo4D-Docs',
   onBrokenLinks: 'throw',
