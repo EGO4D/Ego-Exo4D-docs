@@ -21,7 +21,7 @@ TODO
 ## Browse The Dataset {#browse-dataset}
 
 - Refer to [Overview](/overview) to see what's available.
-- Use the [Visualization Tool](/viz-tool) to browse the dataset.
+- Use the Visualization Tool(/viz-tool) to browse the dataset.
 
 ## Download The Dataset {#download-dataset}
 
@@ -48,22 +48,22 @@ pip install .
 ### Select a Subset {#download-dataset-b}
 
 There are many ways the dataset is partitioned, you can choose subsets with respect to:
-- [parts of the dataset](TODO1), which include:
+- parts of the dataset(TODO1), which include:
     - take-trimmed time-syncornized videos
     - point clouds
     - trajectory
     - imu
-    - ... [and more](TODO1)
-- data relevant to a specific [annotations](TODO2), [benchmarks](TODO3) and dataset splits (train/val/test)
+    - ... and more(TODO1)
+- data relevant to a specific annotations(TODO2), benchmarks(TODO3) and dataset splits (train/val/test)
 - egocentric or exocentric video data
 - specific takes or captures to download
 - universities
 
-Please refer to [below for examples](#download-dataset-c) and [here for detailed documentation](TODO).
+Please refer to [below for examples](#download-dataset-c) and here for detailed documentation(TODO).
 
 ### Download The Data {#download-dataset-c}
 
-Please refer to [here for more detailed documentation](TODO). Below are some examples on how to run the downloader CLI with common options:
+Please refer to here for more detailed documentation(TODO). Below are some examples on how to run the downloader CLI with common options:
 
 :::note You can use `--help` to view all the options
 ```
@@ -72,7 +72,7 @@ python3 -m ego4d.egoexo.download.cli --help
 :::
 
 
-Download suggested dataset parts for all the [takes](TODO) present. Warning, this is (10TiB - TODO change):
+Download suggested dataset parts for all the takes(TODO) present. Warning, this is (10TiB - TODO change):
 
 :::note This will download 10TiB of data
 ```

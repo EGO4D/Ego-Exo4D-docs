@@ -15,15 +15,15 @@ parameters / trajectories), 3D point clouds of the recorded environment, and eye
 
 TODO: insert visual summarizing the data?
 
-- [Start with Getting Started](/getting-started)
-- [Read the paper](TODO) for a complete introduction
-- [Watch a Video Introduction](TODO) of the Dataset (TODO)
-- [Read the Overview](TODO) describing a summary of what's in the dataset
-    - [Learn about the Annotations](TODO)
-    - [Learn about the Benchmarks](TODO)
-- [Explore the Dataset](TODO) with the Visualization Tool
-- [Visit the Forum](TODO) or [Contact us](TODO) to ask questions, report issues
+- [Start with Getting Started](./getting-started)
+- Read the paper(TODO) for a complete introduction
+- Watch a Video Introduction(TODO) of the Dataset (TODO)
+- Read the Overview(TODO) describing a summary of what's in the dataset
+    - Learn about the Annotations(TODO)
+    - Learn about the Benchmarks(TODO)
+- Explore the Dataset(TODO) with the Visualization Tool
+- Visit the Forum(TODO) or Contact us(TODO) to ask questions, report issues
   with the data or related codebases, make suggestions or discuss relevant research.
-- [Contribute](TODO) code to the repository or the relevant baseline repositories
+- Contribute(TODO) code to the repository or the relevant baseline repositories
 
 Have fun using the dataset!

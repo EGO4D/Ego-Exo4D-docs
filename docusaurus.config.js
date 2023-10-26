@@ -66,10 +66,10 @@ const config = {
                 label: 'Introduction',
                 to: '/',
               },
-              {
-                label: 'Annotation Guidelines',
-                to: '/data/annotation-guidelines',
-              },
+              // {
+              //   label: 'Annotation Guidelines',
+              //   to: '/data/annotation-guidelines',
+              // },
               {
                 label: 'EgoExo4D Challenge',
                 to: '/challenge',
