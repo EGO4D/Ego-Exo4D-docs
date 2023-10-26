@@ -25,10 +25,24 @@ Please ensure you're using a stable version of node, i.e. run `nvm use stable` b
 npm install -g yarn
 ```
 
-### Build Site
+### Install Deps
+
+From the root directory of this repo:
 
 ```
-npm intsall
+yarn install
+```
+
+### Run Site
+
+```
+yarn start
+```
+
+### Deploy Site (don't run)
+
+```
+yarn deploy
 ```
 
 
