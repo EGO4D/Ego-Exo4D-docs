@@ -2,7 +2,7 @@
     "label": "Keystep",
     "position": 1,
     "link": {
-        "type": "generated-index",
-        "description": "Keystep is broken down into four sub-tasks. Click one for more details."
+        "type": "doc",
+        "id": "index"
     }
 }

@@ -73,4 +73,7 @@ yarn deploy
 
 ## Contributing
 
-Feel free to contribute.
+Feel free to contribute. 
+
+If you are contributing a notebook, please ensure all cells have been
+**cleared**.
