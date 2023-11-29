@@ -13,7 +13,7 @@ All steps assume you're using a stable version of node & yarn, which you can ins
 Install: https://github.com/nvm-sh/nvm#installing-and-updating
 
 ```
-nvm install stable`
+nvm install stable
 nvm use stable
 ```
 
