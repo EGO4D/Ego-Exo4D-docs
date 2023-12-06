@@ -28,9 +28,9 @@ We do not use such information as we want to encourage the development of method
 
 * Visibility Accuracy, which evaluates the ability of the method to estimate the visibility of the object in the target view, as in practice it may often be occluded or outside the field of view. We measure this performance using balanced accuracy. Note that, in contrast to the previous metrics that compare segmentation masks at frames where the object is visible in both views, this metric is computed based on all frames with query masks.
 
+### Baseline
 
-Baseline:
-- 
+Coming Soon!
 
 
 
