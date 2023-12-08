@@ -40,7 +40,7 @@ Here is a typical structure for EgoPose
 
   ```json
   {
-    "(frame number)": [{
+    "<frame_number>": [{
         "metadata": {
             "take_uid": (string),
             "take_name": (string),
@@ -48,7 +48,7 @@ Here is a typical structure for EgoPose
         },
         "annotation2D": {
             "cam01":{
-                "left_pinky_3": {
+                "<joint_name>": {
                     "x": (float),
                     "y": (float),
                     "placement": (string)
@@ -56,7 +56,7 @@ Here is a typical structure for EgoPose
                 ...
             },
             "cam02":{
-                "left_pinky_3": {
+                "<joint_name>": {
                     "x": (float),
                     "y": (float),
                     "placement": (string)
@@ -64,7 +64,7 @@ Here is a typical structure for EgoPose
                 ...
             },
             "cam03":{
-                "left_pinky_3": {
+                "<joint_name>": {
                     "x": (float),
                     "y": (float),
                     "placement": (string)
@@ -72,7 +72,7 @@ Here is a typical structure for EgoPose
                 ...
             },
             "cam04":{
-                "left_pinky_3": {
+                "<joint_name>": {
                     "x": (float),
                     "y": (float),
                     "placement": (string)
@@ -80,7 +80,7 @@ Here is a typical structure for EgoPose
                 ...
             },
             "aria":{
-                "left_pinky_3": {
+                "<joint_name>": {
                     "x": (float),
                     "y": (float),
                     "placement": (string)
@@ -89,13 +89,13 @@ Here is a typical structure for EgoPose
             },
         },
         "annotation3D": {
-            "left_pinky_3": {
+            "<joint_name>": {
                 "x": (float),
                 "y": (float),
                 "z": (float),
                 "num_views_for_3d": (int)
             },
-            "left_pinky_3": {
+            "<joint_name>": {
                 "x": (float),
                 "y": (float),
                 "z": (float),
@@ -137,5 +137,21 @@ Here is a typical structure for EgoPose
       - **`y`** (Float): Coordinates in 3D space.
       - **`z`** (Float): Coordinates in 3D space.
       - **`num_views_for_3d`** (Integer): Number of views considered for 3D annotation.
+   
+### Joint Names
+In EgoPose, body and hand are annotated separately. Please refer to seperate json for body and hand individually. The group of joint names adopted in body and hand annotations are:
+-  `joint_name` for Body (17 in total):
+
+  `left-shoulder`, `right-shoulder`, `left-knee`, `right-knee`, `left-elbow`, `right-elbow`, `left-eye`, `right-eye`, `left-wrist`, `right-wrist`, `left-ankle`, `right-ankle`, `left-hip`, `right-hip`, `left-ear`, `right-ear`, `nose`
+
+![Screenshot 2023-12-08 at 3 58 18 PM](https://github.com/fairinternal/Ego-Exo4D-Docs/assets/12767306/1de75df6-2eff-4495-b087-2b2c70cb5a42)
+
+-  `joint_name` for Hand (42 in total, 21 for left hand, 21 for right hand):
+  
+`left_pinky_1`, `left_pinky_2`, `left_pinky_3`, `left_pinky_4`, `left_ring_1`, `left_ring_2`, `left_ring_3`, `left_ring_4`, `left_middle_1`, `left_middle_2`, `left_middle_3`, `left_middle_4`, `left_index_1`, `left_index_2`, `left_index_3`, `left_index_4`, `left_thumb_1`, `left_thumb_2`, `left_thumb_3`, `left_thumb_4`, `left_wrist`, `right_pinky_1`, `right_pinky_2`, `right_pinky_3`, `right_pinky_4`, `right_ring_1`, `right_ring_2`, `right_ring_3`, `right_ring_4`, `right_middle_1`, `right_middle_2`, `right_middle_3`, `right_middle_4`, `right_index_1`, `right_index_2`, `right_index_3`, `right_index_4`, `right_thumb_1`, `right_thumb_2`, `right_thumb_3`, `right_thumb_4`, `right_wrist`
+
+![Screenshot 2023-12-08 at 3 57 54 PM](https://github.com/fairinternal/Ego-Exo4D-Docs/assets/12767306/f3b2612f-3c1e-4fa2-b91b-0b8d31d606f4)
+
+
 
 
