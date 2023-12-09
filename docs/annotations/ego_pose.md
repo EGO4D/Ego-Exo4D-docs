@@ -153,5 +153,223 @@ In EgoPose, body and hand are annotated separately. Please refer to seperate jso
 ![Screenshot 2023-12-08 at 3 57 54 PM](https://github.com/fairinternal/Ego-Exo4D-Docs/assets/12767306/f3b2612f-3c1e-4fa2-b91b-0b8d31d606f4)
 
 
+## Camera Pose JSON Structure 
+For each take, the corresponding camera pose json contains the necessary information for each timestamp. A typical structure is as below: 
 
+Example
+```json
+{
+    "<frame_number>": {
+        "metadata": {
+            "take_uid": (string),
+            "take_name": (string),
+            "frame_number": (int)
+        },
+        "aria": {
+            "camera_intrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ],
+            "camera_extrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ]
+        },
+        "cam01": {
+            "camera_intrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ],
+            "camera_extrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ]
+        },
+        "cam02": {
+            "camera_intrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ],
+            "camera_extrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ]
+        },
+        "cam03": {
+            "camera_intrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ],
+            "camera_extrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ]
+        },
+        "cam04": {
+            "camera_intrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ],
+            "camera_extrinsics": [
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ],
+                [
+                    (float),
+                    (float),
+                    (float),
+                    (float)
+                ]
+            ]
+        }
+    },
+    ...
+}
 
+```
+### Metadata
+
+- **`take_uid`** (String): Unique identifier for the take.
+- **`take_name`** (String): Name of the take.
+- **`frame_number`** (Integer): Frame number associated with the data.
+
+### Camera metrix
+For each camera, the intrinsic and extrinsic matries are provided as 3x4 transformation matries.
