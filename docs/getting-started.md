@@ -29,27 +29,15 @@ You can download the dataset similar to that of Ego4D, using the Downloader CLI.
 
 ### Obtain The EgoExo4D Downloader CLI {#download-dataset-a}
 
-There are two methods to obtain the downloader CLI. In both cases, we recommend to first setup a conda environment.
-
-#### Option 1: pip
-
-```
-pip install ego4d
-```
-
-#### Option 2: Clone the [Ego4d](https://github.com/facebookresearch/Ego4d) Repository
-
-```
-git clone https://github.com/facebookresearch/Ego4d
-cd Ego4d
-pip install .
-```
+Please follow the
+[Setup](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup)
+instructions on the Ego4D Github README.
 
 ### Select a Subset {#download-dataset-b}
 
 There are many ways the dataset is partitioned, you can choose subsets with respect to:
 - parts of the dataset(TODO1), which include:
-    - take-trimmed time-syncornized videos
+    - take-trimmed time-synchronized videos
     - point clouds
     - trajectory
     - imu
@@ -59,11 +47,11 @@ There are many ways the dataset is partitioned, you can choose subsets with resp
 - specific takes or captures to download
 - universities
 
-Please refer to [below for examples](#download-dataset-c) and here for detailed documentation(TODO).
+Please refer to [below for examples](#download-dataset-c) and [here for detailed documentation](../download).
 
 ### Download The Data {#download-dataset-c}
 
-Please refer to here for more detailed documentation(TODO). Below are some examples on how to run the downloader CLI with common options:
+Please refer to here for more [detailed documentation](../download). Below are some examples on how to run the downloader CLI with common options:
 
 :::note You can use `--help` to view all the options
 ```
