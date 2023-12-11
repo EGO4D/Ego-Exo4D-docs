@@ -7,14 +7,12 @@ slug: /
 Ego-Exo4D is a diverse, large-scale multimodal multiview video dataset and benchmark challenge. Ego-Exo4D centers around simultaneously captured and timesynced egocentric and exocentric video of skilled human activities . More than 800 participants from 13 cities worldwide performed these activities in 131 different natural scene contexts, yielding long-form captures from 1 to 42 minutes each and 1,422 hours of video combined. The dataset contains skilled activites covering both physical (Soccer, Basketball, Dance, Rock Climbing) and procedural (Cooking, Bike Repair, Health) tasks.
 
 
-<img src="./assets/scenarios.jpg" alt="Scenarios overview" width="75%" style="display: block; margin: 0 auto;">
+![Scenarios overview](/img/scenarios.jpg#center)
 
-<br>
+
 The video is is accompanied by 7-channel audio, IMU, eyegaze, two grayscale SLAM cameras, and 3D environment point clouds. Ego-Exo4D also provides multiple video-language resources, all time indexed: first-person narrations by the camera wearers describing their own actions; third-person play-by-play descriptions of every camera wearer action; and third-person spoken expert commentary done by coaches and teachers critiquing their performance.The dataset is also extensively annotated with 3D body and hand pose, object segmentation masks, keysteps, procedural dependencies, and proficiency ratings in support of our proposed benchmark tasks.
 
-<br>
-
-<img src="./assets/dataset_overview.jpg" alt="Dataset overview" width="90%" style="display: block; margin: 0 auto;">
+![Dataset overview](/img/dataset_overview.jpg)
 
 ## Getting Started
 - [Get access and download the dataset](./getting-started)
@@ -27,3 +25,4 @@ The video is is accompanied by 7-channel audio, IMU, eyegaze, two grayscale SLAM
 - Visit the [Forum](https://discuss.ego4d-data.org/) or [Contact us](./contact.md) to ask questions and report issues with the data or related codebases.
 
 Have fun using the dataset!
+
