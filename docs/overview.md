@@ -17,7 +17,15 @@ The dataset includes:
 * a visualization tool to quickly browse the dataset;
 * a wide variety of annotations captured both during and after recordings.
 
-The annotated data consists of: procedural activities time-segmented into regions classified within hierarchical taxonomy, with the intention to breakdown the high-level goal(s) into keysteps; time-synchronized segmentation mask tracks for object instances across one egocentric and exocentric view; human and automatically generated 3D joint position ground truth data (following the MS-COCO format), tracked across sub-clips within a take, for body (17 keypoints) and hand (21 keypoints); before (pre) and after (post) survey data answered by the participant to the help asses the proficiency of the camera wearer with normalized proficiency categories per domain; rich video-aligned natural language data in three different forms: Narrate & Act (the "why and how" from the participant's perspective), Atomic Action Descriptions (the "what" from a layman's third-person perspective), and Expert Commentary (the "how" from an expert's, third-person, perspective) which includes proficiency ratings from experts (with reasons why).
+The annotated data consists of: 
+* procedural activities time-segmented into regions classified within hierarchical taxonomy, with the intention to breakdown the high-level goal(s) into keysteps;
+* time-synchronized segmentation mask tracks for object instances across one egocentric and exocentric view;
+* human and automatically generated 3D joint position ground truth data (following the MS-COCO format), tracked across sub-clips within a take, for body (17 keypoints) and hand (21 keypoints);
+* before (pre) and after (post) survey data answered by the participant to the help asses the proficiency of the camera wearer with normalized proficiency categories per domain;
+* rich video-aligned natural language data in three different forms:
+   * Narrate & Act (the "why and how" from the participant's perspective),
+   * Atomic Action Descriptions (the "what" from a layman's third-person perspective), and
+   * Expert Commentary (the "how" from an expert's, third-person, perspective) which includes proficiency ratings from experts (with reasons why).
 
 There are seven benchmark tasks derived from the annotations. The benchmark tasks form the Challenge we will host for 2024.
 
