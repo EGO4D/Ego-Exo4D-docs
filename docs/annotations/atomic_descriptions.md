@@ -1,5 +1,5 @@
 ---
-title: Atomic Descriptions
+title: Atomic Action Descriptions
 sidebar_position: 5
 ---
 
