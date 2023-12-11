@@ -1,6 +1,6 @@
 ---
 title: Expert Commentary
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 Expert Commentary Annotations

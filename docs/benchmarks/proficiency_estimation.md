@@ -1,6 +1,5 @@
 ---
 title: Proficiency Estimation
-sidebar_position: 3
 ---
 
 Predict the proficiency & mistakes of a participant.
