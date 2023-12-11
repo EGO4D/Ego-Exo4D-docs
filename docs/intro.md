@@ -4,27 +4,26 @@ sidebar_position: 1
 slug: /
 ---
 
-Ego-Exo4D is a large-scale multi-modal multi-view video dataset and benchmark
-challenge. The dataset includes time-synchronized videos of participants
-recorded with at least one egocentric and four exocentric cameras. Participants
-(camera wearers) are recorded during physical (Soccer, Basketball, Dance, Rock
-Climbing) and procedural tasks (Cooking, Bike Repair, Health). The dataset
-includes: [seven benchmark](./benchmarks) tasks with associated annotations, rich video-aligned
-natural language data in three different forms, calibrated cameras with 3D camera poses (extrinsic
-parameters / trajectories), 3D point clouds of the recorded environment, and eye gaze.
+Ego-Exo4D is a diverse, large-scale multimodal multiview video dataset and benchmark challenge. Ego-Exo4D centers around simultaneously captured and timesynced egocentric and exocentric video of skilled human activities . More than 800 participants from 13 cities worldwide performed these activities in 131 different natural scene contexts, yielding long-form captures from 1 to 42 minutes each and 1,422 hours of video combined. The dataset contains skilled activites covering both physical (Soccer, Basketball, Dance, Rock Climbing) and procedural (Cooking, Bike Repair, Health) tasks.
 
-TODO: insert visual summarizing the data?
 
-- [Start with Getting Started](./getting-started)
-- Read the paper(TODO) for a complete introduction
-- Read the Overview(TODO) describing a summary of what's in the dataset, how it
-  was collected, etc.
-    - Learn about the Annotations(TODO)
-    - Learn about the Benchmarks(TODO)
-- Watch a Video Introduction(TODO) of the Dataset (TODO)
-- Explore the Dataset(TODO) with the Visualization Tool
-- Visit the Forum(TODO) or Contact us(TODO) to ask questions, report issues
-  with the data or related codebases, make suggestions or discuss relevant research.
-- Contribute(TODO) code to the repository or the relevant baseline repositories
+<img src="./assets/scenarios.jpg" alt="Scenarios overview" width="75%" style="display: block; margin: 0 auto;">
+
+<br>
+The video is is accompanied by 7-channel audio, IMU, eyegaze, two grayscale SLAM cameras, and 3D environment point clouds. Ego-Exo4D also provides multiple video-language resources, all time indexed: first-person narrations by the camera wearers describing their own actions; third-person play-by-play descriptions of every camera wearer action; and third-person spoken expert commentary done by coaches and teachers critiquing their performance.The dataset is also extensively annotated with 3D body and hand pose, object segmentation masks, keysteps, procedural dependencies, and proficiency ratings in support of our proposed benchmark tasks.
+
+<br>
+
+<img src="./assets/dataset_overview.jpg" alt="Dataset overview" width="90%" style="display: block; margin: 0 auto;">
+
+## Getting Started
+- [Get access and download the dataset](./getting-started)
+- Read the [paper](http://arxiv.org/abs/2311.18259) for a complete introduction
+- Read the [Overview](./overview) page describing a summary of what's in the dataset
+    - Learn about the [Annotations](./annotations/)
+    - Learn about the [Benchmarks](./benchmarks)
+- Watch a [Video Introduction](https://www.youtube.com/watch?v=GdooXEBAnI8) of the Dataset
+- Explore the Dataset with the [Visualization Tool](https://visualize.ego4d-data.org/)
+- Visit the [Forum](https://discuss.ego4d-data.org/) or [Contact us](./contact.md) to ask questions and report issues with the data or related codebases.
 
 Have fun using the dataset!
