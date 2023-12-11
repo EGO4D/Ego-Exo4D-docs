@@ -23,7 +23,7 @@ The video is is accompanied by 7-channel audio, IMU, eyegaze, two grayscale SLAM
     - Learn about the [Annotations](./annotations/)
     - Learn about the [Benchmarks](./benchmarks)
 - Watch a [Video Introduction](https://www.youtube.com/watch?v=GdooXEBAnI8) of the Dataset
-- Explore the Dataset with the [Visualization Tool](https://visualize.ego4d-data.org/)
+- Explore the Dataset with the [Visualization Tool](https://visualize.ego4d-data.org/?v=%22EgoExo+v1%22)
 - Visit the [Forum](https://discuss.ego4d-data.org/) or [Contact us](./contact.md) to ask questions and report issues with the data or related codebases.
 
 Have fun using the dataset!
