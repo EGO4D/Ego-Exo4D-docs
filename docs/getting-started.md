@@ -13,15 +13,6 @@ To gain access and start using the dataset, follow these steps:
     2. [Select a subset of the data to download](#download-dataset-b)
     3. [Download The Data](#download-dataset-c)
 
-
-## License Agreement {#license-agreement}
-
-Obtaining the dataset or any annotations requires you first review our license agreement and accept the terms. Go to [https://ego4ddataset.com/ego4d-license/](ego4ddataset.com/ego4d-license) to review and execute this agreement. You will be emailed a set of AWS access credentials when your license agreement is approved, which will take ~48hrs. In the meantime, you can explore the [data overview](/overview/) and the [sample notebooks](https://github.com/facebookresearch/Ego4d/tree/main/notebooks/egoexo) to get familiar with the dataset, and download the CLI to get setup in advance.
-
-Note that license agreement can be signed as an individual or on behalf of your institution. You will likely sign the license as an individual. Typically, only institutional signatories at a director or executive level can agree to license terms on behalf of an entire organization.
-
-Also note that once approved, your access credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS. You can easily renew your license once it expires by requesting it again at [https://ego4ddataset.com/ego4d-license/](ego4ddataset.com/ego4d-license). If previously approved, your access will be immediately re-activated.
-
 ## License Agreement {#license-agreement}
 To obtain access to the Ego4D dataset or any annotations, you must first review and accept the terms of our license agreement. This agreement covers the use of the dataset for research purposes only and includes restrictions on commercial use, redistribution, and other activities. There are no fees associated with using the dataset.
 
