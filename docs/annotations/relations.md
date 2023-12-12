@@ -5,6 +5,10 @@ sidebar_position: 2
 
 ### Relations Annotations
 
+:::info
+We have released a [Notebook Tutorial](https://github.com/facebookresearch/Ego4d/blob/main/notebooks/egoexo/EgoExo_Relations.ipynb) covering this annotation file, it covers how to read the annotation file & how to visualize the annotations
+:::
+
 Relation annotations are released in separate JSON files for training and validation set. We use "take_uid" as the high level field to group annotations. The following JSON string shows a sample annotation for one of the take. Here is a brief description of the most relevant fields:
 
 * **scenario:** name of the high level activity happening in this take
@@ -34,6 +38,8 @@ Relation annotations are released in separate JSON files for training and valida
   - **annotation_fps:** video fps that was used for this annotation
   - **annotated_frames:** List of all the frames that were annotated by the annotator. We include this separately because there can be several frames where the object was not present, hence there won't be any mask for it in the "annotation" field.
 
+
+## Sample JSON
 
 Here is a JSON snippet showing a sample annotation:        
 
