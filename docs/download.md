@@ -3,57 +3,83 @@ title: CLI Downloader
 sidebar_position: 5
 ---
 
-:::note
-As a pre-requisite, you must setup the Ego4D codebase, please refer to the [Ego4D
-Github README](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup) to do so
+:::info
+As a pre-requisite, you must setup:
+1. Please make sure you **have a License Agreement**. If you don't, please refer to the
+[Getting Started](../getting-started) page. *The License Agreement process takes up to 2 days: so do it early!*
+2. Have **setup or installed Ego4D** codebase, please refer to the [Ego4D
+Github README](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup).
 :::
 
-Please make sure you have a License Agreement. If you don't, please refer to the
-[Getting Started](../getting-started) page.
+The dataset is large, due to this it is partitioned into separate "parts"
+(subsets). You may choose to download one or more parts of the dataset with
+optional filters in order to reduce how much you need to download.
 
-There are many ways the dataset is partitioned, you can choose subsets with respect to:
-- different parts of the dataset (take videos, trajectory, point clouds, etc.)
-- data relevant to a specific annotations(TODO2), benchmarks(TODO3) and dataset splits (train/val/test)
-- egocentric or exocentric video data
-- specific takes or captures to download
-- universities
+The different parts of the dataset include: 
+- **metadata**
+- **annotations**
+- **takes**
+- **captures**
+- **trajectory**
+- eye_gaze
+- point_cloud
+- capture_raw_stitched_videos
+- capture_raw_vrs
+- ego_pose_pseudo_gt
 
-Please refer to [below for examples](#download-dataset-c) and [here for detailed documentation](../download).
+The parts in bold refer to the *recommended set*. You can additionally filter based on:
+- Data relevant to a specific [benchmarks](../benchmarks): `--benchmarks <benchmark_name>`
+    - e.g. `--benchmarks keystep relations`
+    - For EgoPose you may use:
+        - `egopose` or `ego_pose` for both body and hands
+        - `egopose/hands` or `ego_pose/hands` or `hands`
+        - `egopose/body`, `ego_pose/body` or `body`
+- Dataset splits (train/val/test): `--splits <s1> <s2> ...`, e.g.
+    - `--splits train` for data that only lies in the training set
+- Egocentric or exocentric related data (videos, trajectory)
+    - Use `--views exo` for only exocentric, `--views ego` for only
+      egocentric, or `--views ego exo` for both. Defaults to both.
+- Specific takes or captures to download: `--uids`
+- Universities (use `--universities` or `-u`)
+    - e.g. `-u cmu unc sfu`
+
+Please refer to the Download [CLI README](https://github.com/facebookresearch/Ego4d/tree/main/ego4d/egoexo/download) or use the flag `--help` for the latest parts of the dataset and additional usage of the dataset.
 
 
 # Download The Data {#download-dataset-c}
 
 Below are some examples on how to run the downloader CLI with common options:
 
-:::note You can use `--help` to view all the options
+:::note As noted above, you can use `--help` to view all the up-to-date options
 ```
-python3 -m ego4d.egoexo.download.cli --help
-```
-:::
-
-
-Download suggested dataset parts for all the takes(TODO) present. Warning, this is (10TiB - TODO change):
-
-:::note This will download 10TiB of data
-```
-python3 -m ego4d.egoexo.download.cli -o <out-dir>
+egoexo --help
 ```
 :::
+
+
+### Recommended Dataset
+Download suggested dataset parts for all the takes present.
+
+:::warning This will download ~14TiB of data
+:::
+```
+egoexo -o <out-dir>
+```
 
 
 #### Other Examples
 
 Download all annotations & metadata:
 ```
-python3 -m ego4d.egoexo.download.cli -o <out-dir> --parts annotations metadata
+egoexo -o <out-dir> --parts annotations metadata
 ```
 
 Download all point clouds, eye gaze and trajectories:
 ```
-python3 -m ego4d.egoexo.download.cli -o <out-dir> --parts point_cloud eye_gaze trajectory
+egoexo -o <out-dir> --parts point_cloud eye_gaze trajectory
 ```
 
 Download all point clouds, eye gaze and trajectories:
 ```
-python3 -m ego4d.egoexo.download.cli -o <out-dir> --parts point_cloud eye_gaze trajectory
+egoexo -o <out-dir> --parts point_cloud eye_gaze trajectory
 ```

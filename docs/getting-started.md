@@ -23,8 +23,8 @@ Note that your access credentials will expire in 14 days, so it's important to d
 
 ## Browse The Dataset {#browse-dataset}
 
-- Refer to [Overview](/overview) to see what's available.
-- Use the Visualization Tool(/viz-tool) to browse the dataset.
+- Refer to [Overview](/overview) to see what's available
+- Use the [Visualization Tool](https://visualize.ego4d-data.org/?v=%22EgoExo+v1%22) to browse the dataset
 
 ## Download The Dataset {#download-dataset}
 
@@ -34,11 +34,11 @@ A summary of the steps to take are:
 1. [Obtain the EgoExo4D Downloader CLI](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup):
    - Please follow the [Setup](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup)
 instructions on the [README of the Ego4D repository](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup)
-2. [Select a subset of the data to download](#download-dataset-b)
+2. Select a subset of the data to download
    - By default the downloader CLI will download a "recommended" set/parts of
      the dataset for general research purposes, this set is approximately 14 TiB.
    - If you wish to filter/download only specific parts of the dataset, then
       please refer to the [documentation](./download.md)
-3. [Download The Data](#download-dataset-c)
+3. [Download The Data](../download)
     - Run the CLI, for example `egoexo -o <out-dir>` or with specific parts
       `egoexo -o <out-dir> --parts metadata annotations takes point_cloud`
