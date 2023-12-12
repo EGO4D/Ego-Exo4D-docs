@@ -4,10 +4,10 @@ sidebar_position: 5
 ---
 
 :::info
-As a pre-requisite, you must setup:
-1. Please make sure you **have a License Agreement**. If you don't, please refer to the
-[Getting Started](../getting-started) page. *The License Agreement process takes up to 2 days: so do it early!*
-2. Have **setup or installed Ego4D** codebase, please refer to the [Ego4D
+As a pre-requisite, you must:
+1. Make sure you **have a License Agreement**. If you don't, please refer to the
+[Getting Started](../getting-started) page. *The License Agreement process takes 2 days: so do it early!*
+2. Have **setup or installed the Ego4D** codebase, please refer to the [Ego4D
 Github README](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup).
 :::
 

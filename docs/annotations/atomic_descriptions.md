@@ -21,19 +21,20 @@ information is present:
   view or not, and
 - `unsure`: whether or not the annotator is unsure the name of objects being referred to in the text description, e.g. 
 
-In the guidelines to annotators, we ask each description to be:
+In the guidelines to annotators, we ask:
 1. The timepoint being marked is within 1-2s of when the description occurs
-1. The text description language is independent of other text descriptions (each
-   text description is stand-alone), e.g. an annotator should not mention "C
-   hammers the nail" and then "C continues to hammer the nail"
-3. Minimize redundancy & repetition for repetitive actions, e.g. "C slices the
+1. The language used for the text description is independent of other text
+   descriptions (i.e. each text description is stand-alone), e.g. an annotator should
+   not mention "C hammers the nail" and then "C continues to hammer the nail"
+3. To minimize redundancy & repetition for repetitive actions, e.g. "C slices the
    tomato", "C slices the tomato", "C slices the tomato" should not be annotated
    for each individual slice.
 4. We recommend, but do not enforce, each description to only contain *one
    verb*. If multiple things are occurring at once, we ask annotators to split
-   this up into multiple annotations.
-5. We ask annotators to not use brand names when naming objects. If they do,
-   `unsure` will likely be marked to be true (`1`).
+   this up into multiple descriptions.
+5. We ask annotators to not use brand names when naming objects. If they do or
+   in cases where they are unsure about what an object is called, the `unsure`
+   flag should marked as true (`1`).
 
 If a text description refers to:
 - The camera wearer (`subject == C`), the letter `C` denotes the camera wearer in the sentence,
