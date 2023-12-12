@@ -67,8 +67,8 @@ The following JSON string shows a sample annotation for one of the take. Here is
     visible from the egocentric view
   - **`best_exo`**: what exo
     - **`cam_id`**: the camera string that the `takes.json` and `captures.json` files refer to
-* **rejected**: whether the annotation job was rejected
-* **reject_reason**: a string to describe why the annotation job was rejected
+* **`rejected`**: whether the annotation job was rejected
+* **`reject_reason`**: a string to describe why the annotation job was rejected
 * **`annotator_id`**: a unique string to represent the annotator
 * **`annotation_uid`**: a unique ID to identify an annotation
     
