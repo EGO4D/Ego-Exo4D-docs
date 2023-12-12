@@ -51,7 +51,8 @@ const config = {
         title: 'EgoExo4D',
         logo: {
           alt: 'EgoExo4D Logo',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
+          srcDark: 'img/logo-dark.svg',
         },
         items: [
         ],
@@ -110,6 +111,18 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: [
+    [
+      require.resolve("docusaurus-plugin-search-local"),
+      {
+        indexDocs: true,
+        indexPages: false,
+        hashed: false,
+        docsRouteBasePath: "/",
+      },
+    ],
+  ],
 };
 
 module.exports = config;
