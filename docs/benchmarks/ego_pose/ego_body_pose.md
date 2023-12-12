@@ -16,6 +16,15 @@ title: EgoBodyPose
 
 - There could be some keypoints missing in certain frames due to occlusion, and these keypoints will be excluded from the evaluation.
 
-### Baseline
+## Baselines
 
-Coming soon!
+| Method | MPJPE on VAL | MPJVE on VAL | MPJPE on TEST | MPJVE on TEST |
+|--------|--------------|--------------|---------------|---------------|
+| Static pose | 163.94 |   -  | 150.95 |   -  |
+| EgoEgo      |  24.35 | 0.71 |  28.78 | 0.57 |
+| Kinpoly     |  22.66 | 0.74 |  25.80 | 0.60 |
+| IMU-based   |  20.86 | 1.87 |  19.88 | 1.70 |
+
+- Note: For EgoEgo and Kinpoly, we only use headset poses as input, and we use the pretrained model weights and convert the prediction results from SMPL to COCO keypoints as they do not support COCO keypoints directly.
+
+- Please refer to the section 13.D.1 in our submission for details of baselines in the table above. 
