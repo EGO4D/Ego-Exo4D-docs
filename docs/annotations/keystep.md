@@ -5,33 +5,33 @@ sidebar_position: 1
 
 ## Keystep Annotations
 
-The keystep annotations are released in a single JSON file containing three main parts: *annotations*, *taxonomy* and *vocabulary*. Here is a brief description of the 3 parts and their most relevant fields:
+The keystep annotations are released in a single JSON file containing three main fields: *annotations*, *taxonomy* and *vocabulary*. Here is a brief description of the most relevant fields:
 
 * **annotations:** contains a list of all the key-step annotations grouped by "take_uid": 
-  - **take_uid:** unique id given to this take,
-  - **take_name:** unique name given to this take,
-  - **scenario:** name of the high level activity happening in this take,
+  - **take_uid:** unique id given to this take
+  - **take_name:** unique name given to this take
+  - **scenario:** name of the high level activity happening in this take
   - **segments:** list of segment annotations contained in this take:
-    - **start_time":** the start time of the annotation segment in seconds,
-    - **end_time:** the end time of the annotation segment in seconds,
-    - **step_id:** the step id within the corresponding scenario's taxonomy,
-    - **step_unique_id:**, the unique step id given to this keystep which is common over all the scenario taxonomies,
-    - **step_name:** name of the keystep,
-    - **step_description:** description of this particular keystep instance as provided by the annotator,
-    - **is_essential:** whether this keystep instance is essential for completing the scenario task or not,
+    - **start_time":** the start time of the annotation segment in seconds
+    - **end_time:** the end time of the annotation segment in seconds
+    - **step_id:** the step id within the corresponding scenario's taxonomy (corresponds to 'id' field in taxonomy)
+    - **step_unique_id:** the unique step id given to this keystep which is shared over all the scenario taxonomies
+    - **step_name:** name of the keystep
+    - **step_description:** description of this particular keystep instance as provided by the annotator
+    - **is_essential:** whether this keystep instance is essential for completing the scenario task or not
   - **annotation_metadata:** additional metdata from the annotation task 
     
-* **taxonomy:** a list, containing the keystep taxonomy for every by scenario, organized as a hierarchical tree structure. Every node in this tree contains the following fields: 
+* **taxonomy:** a list, containing the keystep taxonomy for every scenario, organized as a hierarchical tree structure. Every node in this tree contains the following fields: 
     - **id:** the keystep node id, unique to this scenario
-    - **is_leafnode:**, whether the node is a leaf node 
-    - **name:**, the keystep name
-    - **parent_id:**, the node id of the keystep node's parent
-    - **parent_name:**, the name of the keystep node's parent
-    - **unique_id:**, the unique step id (only for leafnodes)
+    - **is_leafnode:** whether the node is a leaf node 
+    - **name:** the keystep name
+    - **parent_id:** the step id of the keystep node's parent
+    - **parent_name:** the name of the keystep node's parent
+    - **unique_id:** the unique step id (only for leafnodes)
 
-* **vocabulary:** contains a global vocabulary, listing all the keysteps in the dataset in an <step_unique_id>:<step_name> format. For every entry in the vocabulary, the step_unique_id corresponds to the step_unique_id fields of the corresponding annotations. The step_name corresponds to the *step_name* in the annotations and *name* field in the taxonomy.
+* **vocabulary:** contains a global vocabulary, listing all the keysteps in the dataset as a dictionary of <step_unique_id>:<step_name> entries, where the <step_unique_id> key corresponds to the *step_unique_id* field in the annotations and *unique_id* in the taxonomy and the <step_name> value corresponds to *step_name* in the annotations and *name* field in the taxonomy.
 
-**Note:** Certain keysteps might be common and appear in more than one scenarios. In those cases the *id* field within different taxonomies may be different but the keystep *name* and *unique_id* will shared.
+**Note:** Certain keysteps might be common and appear in more than one scenarios. In those cases the *id* field assigned to those keysteps between different taxonomies may be different but the keystep *name* and *unique_id* will be the same.
 
 ## Sample JSON
 
@@ -104,6 +104,7 @@ Here is a JSON snippet showing a sample annotation:
 }
 "vocabulary": {
   ...
+  "818": "Check the expiration date",
   "819": "Locate test tube",
   "820": "Locate and unwrap test tube cap",
   "821": "Arrange test material",
@@ -112,5 +113,28 @@ Here is a JSON snippet showing a sample annotation:
   "824": "Read the instructions",
   "825": "fold the instruction paper",
   "828": "Get the testing tube",
+  "829": "Fill the testing with a testing solution",
+  "830": "Locate and unwrap the collection swab",
+  "832": "carefully open the test tube seal paper",
+  "833": "Locate and unwrap the test plate",
+  "834": "cover the test tube",
+  "835": "Wrap or Unwrap Covid- 19 Rapid Antigen Test Pack",
+  "836": "Add sealed solution",
+  "837": "Blow nose",
+  "838": "Slowly insert the tip of the swab into the nose",
+  "839": "Rotate and swirl the swab around for 5-10 times",
+  "840": "Slowly extract the swab from the nostril",
+  "841": "Repeat the process with the other nostril",
+  "843": "Unbox package",
+  "844": "Unwrap testing plate",
   ...
 }
+
+
+
+
+
+  
+
+
+
