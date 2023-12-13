@@ -12,7 +12,7 @@ Going beyond recognizing what a person is doing, this task aims to infer the use
           - [Optional] Exocentric videos synchronized in time
 
         Output:
-          - Proficiency label: Novice, Early expert, Intermediate expert, Late expert
+          - Proficiency label: Novice, Early Expert, Intermediate Expert, Late Expert
 
 
 * Demonstration proficiency estimation: the goal is to perform fine-grained analysis of a given task execution to identify good actions from the participant and suggest tips for improvement.  
@@ -29,7 +29,7 @@ Going beyond recognizing what a person is doing, this task aims to infer the use
 
 ### Metrics
 * Demonstrator proficiency estimation
-  - Top-1 Accuracy when using Ego only , Exo only, and Ego+Exo views 
+  - Top-1 Accuracy when using Ego only, Exo only, and Ego+Exo views 
 
 * Ego clip generation  
   - Mean Average Precision ($mAP_k$) measured at an L1-distance threshold of k = {0.25, 0.5, 1.0} seconds. 
