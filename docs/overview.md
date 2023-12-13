@@ -3,7 +3,8 @@ title: Overview
 sidebar_position: 3
 ---
 
-Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) and benchmark challenge. The dataset consists of time-synchronized videos of participants recorded with at least one first-person (egocentric Aria glasses) and third-person (exocentric GoPro cameras) perspective cameras. Recordings occurred around the world from 12 different universities. Each recording (capture) contains multiple takes of one or more participants (camera wearer) performing a physical (Soccer, Basketball, Dance, Rock Climbing) or procedural (Cooking, Bike Repair, Health) task. Due to the usage of the Aria glasses, we have a wide range of associated 3D data.
+Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) and benchmark challenge. The dataset consists of time-synchronized videos of participants recorded with at least one first-person (egocentric Aria glasses) and third-person (exocentric GoPro cameras) perspective cameras. Recordings occurred around the world from 12 different research institutions. Each recording (capture) contains multiple takes of one or more participants (camera wearer) performing a physical (Soccer, Basketball, Dance, Bouldering, and Music) or procedural (Cooking, Bike Repair, Health) task. Due to the usage of the Aria glasses, we have a wide range of associated 3D data.
+
 
 ## Summary
 ### Recording Devices
