@@ -11,21 +11,21 @@ For each take, you will find:
 
   - **take_uid:** unique id given to this take
   - **good_executions:** list of annotations that were deemed to be a good execution by the expert
-    - **video_time":** the single point in time of the annotation in seconds
+    - **video_time:** the single point in time of the annotation in seconds
     - **list:** the commentary provided by the expert for the particular annotation
     - **expert_uid:** a unique identifier for the annotator who provided the annotation
-    - **video_name:** the video id as above
+    - **video_name:** the video name associated with the take
   - **tips_for_improvement:** list of annotations that were deemed to be suboptimal with a tip for improvement
-    - **video_time":** the single point in time of the annotation in seconds
+    - **video_time:** the single point in time of the annotation in seconds
     - **list:** the tip provided by the expert for the particular annotation
     - **expert_uid:** a unique identifier for the annotator who provided the annotation
-    - **video_name:** the video id as above
+    - **video_name:** the video name associated with the take
    
 Additional take fields (also available in the global metadata):
   - **task_id:** unique id for the task type
-  - **take_name:** unique name given to this take
   - **scenario_name:** name of the high level activity happening in this take
-  - **university_id:** university id for the participant
+  - **task_name:** name of the particular task within the scenario
+  - **university_id:** id of the university where the take was recorded
   - **origin_participant_id:** participant id unique to the university
     
 
@@ -36,36 +36,44 @@ Here is a JSON snippet showing a sample annotation:
 ```json
 [
     {
-        "task_id": 1005, 
-        "task_name": "Cooking Dumplings", 
-        "scenario_name": "Cooking", 
-        "university_id": "ego4d-sfu", 
-        "origin_participant_id": "p013", 
-        "take_uid": "0015e453-3227-41b0-bd64-03c134abe054", 
+        "task_id": 6002,
+        "task_name": "Basketball Drills - Reverse Layup",
+        "scenario_name": "Basketball",
+        "university_id": "ego4d-unc",
+        "origin_participant_id": "30",
+        "take_uid": "0021a226-05b9-4ca4-9e2a-cc4fae3357f3",
         "video_paths": {
-            "ego": "takes/sfu_cooking_013_3/frame_aligned_videos/aria01_214-1.mp4", 
-            "exo1": "takes/sfu_cooking_013_3/frame_aligned_videos/cam01.mp4", 
-            "exo2": "takes/sfu_cooking_013_3/frame_aligned_videos/cam02.mp4", 
-            "exo3": "takes/sfu_cooking_013_3/frame_aligned_videos/cam04.mp4", 
-            "exo4": "takes/sfu_cooking_013_3/frame_aligned_videos/cam05.mp4"
-        }, 
+            "ego": "takes/unc_basketball_03-30-23_02_34/frame_aligned_videos/aria02_214-1.mp4",
+            "exo1": "takes/unc_basketball_03-30-23_02_34/frame_aligned_videos/cam01.mp4",
+            "exo2": "takes/unc_basketball_03-30-23_02_34/frame_aligned_videos/cam02.mp4",
+            "exo3": "takes/unc_basketball_03-30-23_02_34/frame_aligned_videos/cam03.mp4",
+            "exo4": "takes/unc_basketball_03-30-23_02_34/frame_aligned_videos/cam04.mp4"
+        },
         "good_executions": [
             {
-                "video_time": 360.183583, 
-                "list": "['the water is just beginning to start a boil']", 
-                "expert_uid": "d2vast", 
-                "video_name": "sfu_cooking_013_3"
-            }
-        ], 
+                "video_time": 0.983072,
+                "list": [
+                    "Getting lowered towards the ground",
+                    "Bending his legs in the athletic stance",
+                    "Getting towards the right side of the rim quicker with more balance and power"
+                ],
+                "expert_uid": "6jm95g",
+                "video_name": "unc_basketball_03-30-23_02_34",
+            },
+            ...
+        ],
         "tips_for_improvement": [
             {
-                "video_time": 22.998856, 
-                "list": "[\"When making dumplings it's generally preferable to steam the dumpling or to pan-fry it.\"]", 
-                "expert_uid": "d2vast", 
-                "video_name": "sfu_cooking_013_3"
-            }, 
+                "video_time": 87.720592,
+                "list": [
+                  "It\'s taking him, giving him the momentum to move his body behind.",
+                  "It\'s going to follow with the left foot and up."
+                ],
+                "expert_uid": "2g7km5",
+                "video_name": "unc_basketball_03-30-23_02_34",
+            },
             ...
-        ]
+        ],
     },
     ...
 ]
@@ -76,13 +84,13 @@ Here is a JSON snippet showing a sample annotation:
 For each take, you will find:
 
   - **take_uid:** unique id given to this take
-  - **proficiency_score:** the skill estimation of the participant - possible values: [Novice, Early expert, Intermediate expert, Late expert]
+  - **proficiency_score:** the skill estimation of the participant - possible values: [Novice, Early Expert, Intermediate Expert, Late Expert]
    
 Additional take fields (also available in the global metadata):
   - **task_id:** unique id for the task type
-  - **take_name:** unique name given to this take
   - **scenario_name:** name of the high level activity happening in this take
-  - **university_id:** university id for the participant
+  - **task_name:** name of the particular task within the scenario
+  - **university_id:** id of the university where the take was recorded
   - **origin_participant_id:** participant id unique to the university
 
 ### Sample JSON
