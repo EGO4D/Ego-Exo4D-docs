@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # EgoPose Annotations
 The ground truth of EgoPose is annotated at the timestamp level for each take. At each timestamp with valid annotations, a single set of global 3D keypoints are provided, along with the corresponding 2D keypoints on ego and exo cameras. 
-The camera metadata for each take including intrinsic and extrinsic matries are also provided in a seperate .json file. We will describle the details below.
+The camera metadata for each take including intrinsic and extrinsic matrices are also provided in a separate .json file. We will describle the details below.
 
 
 ## 2D/3D Keypoints JSON Structure 
