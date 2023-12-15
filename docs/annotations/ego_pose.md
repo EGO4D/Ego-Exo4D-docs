@@ -3,9 +3,15 @@ title: EgoPose
 sidebar_position: 4
 ---
 
+:::important
+EgoPose annotations are currently not available. It is expected to be released early next
+week. We apologize for the inconvenience.
+:::
+
 # EgoPose Annotations
 The ground truth of EgoPose is annotated at the timestamp level for each take. At each timestamp with valid annotations, a single set of global 3D keypoints are provided, along with the corresponding 2D keypoints on ego and exo cameras. 
-The camera metadata for each take including intrinsic and extrinsic matrices are also provided in a separate .json file. We will describle the details below.
+
+Camera metadata for each take including intrinsic and extrinsic matrices are also provided in separate json files. We will describe the details below.
 
 
 ## 2D/3D Keypoints JSON Structure 
@@ -15,22 +21,21 @@ For each take, the 2D and 3D keypoints are grouped by the frame number. One can 
 Example Usage
 
 ```python
+import os
 import json
 
-# Specify the path to your JSON file
-json_file_path = 'path/to/<take_uid>.json'
+dataset_root_dir = "<download_root_dir>"
+take_uid = "<take_uid>"
+take_json_path = os.path.join(dataset_root_dir, "annotations/egopose/train", f"{take_uid}.json")
 
-# Open and read the JSON file
-with open(json_file_path, 'r') as file:
-    # Load the JSON data
-    json_data = json.load(file)
+ann_data = json.load(open(take_json_path))
 
 # Example Python code to access 2D annotations for 'cam01' and 'cam02'
-cam01_annotations = json_data['1175'][0]['annotation2D']['cam01']
-cam02_annotations = json_data['1175'][0]['annotation2D']['cam02']
+cam01_annotations = ann_data['1175'][0]['annotation2D']['cam01']
+cam02_annotations = ann_data['1175'][0]['annotation2D']['cam02']
 
 # Example usage of 3D annotations for 'right_middle_2' joint
-right_middle_2_3d = json_data['1175'][0]['annotation3D']['right_middle_2']
+right_middle_2_3d = ann_data['1175'][0]['annotation3D']['right_middle_2']
 ```
 
 ### JSON Structure
@@ -371,5 +376,5 @@ Example
 - **`take_name`** (String): Name of the take.
 - **`frame_number`** (Integer): Frame number associated with the data.
 
-### Camera metrix
-For each camera, the intrinsic and extrinsic matries are provided as 3x4 transformation matries.
+### Camera Matrices
+For each camera, the intrinsic and extrinsic matrices are provided as 3x4 transformation matrices.
