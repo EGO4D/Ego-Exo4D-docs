@@ -11,6 +11,16 @@ As a pre-requisite, you must:
 Github README](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup).
 :::
 
+:::warning
+
+If you have downloaded the data prior to Friday the 15th, 2023: 5PM (PST)
+and/or have files downloaded in `<download_dir>/takes/takes` or
+`<download_dir/captures/captures` this is due to a bug. These files should live
+in `<download_dir>/takes/` or `<download_dir>/captures/`. 
+
+[Here is a script](https://gist.github.com/miguelmartin75/b2bfeec06e51ce217ab2613761d9cd7b) to correct this, please also re-download with `-d`. Apologies for the inconvenience.
+:::
+
 The dataset is large, due to this it is partitioned into separate "parts"
 (subsets). You may choose to download one or more parts of the dataset with
 optional filters in order to reduce how much you need to download.
