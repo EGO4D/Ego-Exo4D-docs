@@ -17,28 +17,24 @@ Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) a
     - RGB camera
     - Stereo microphone
 
-### Sensor Data
+### Data
 
-- Video
-    - 4k@60FPS for GoPro
-    - 1404x1404@30FPS for Aria [VRS file format]
-- Audio
-    - 7 channel audio for Aria  [VRS file format]
-    - 128kbps AAC compression, 48kHz sample rate for GoPro
-- IMU
-    - 2 x 1kHZ for Aria (left and right side)  [VRS file format]
-
-### Processed Data
-
-- Video Data
-    - Time-synchronized take-separated videos compressed with H264 (slow, 24, yuv420p)
-    - Collage videos of every camera available for visualization purposes
-- Aria’s Machine Perception Services (MPS)
-    - Intrinsic parameters for all cameras (Aria and GoPros)
-    - Extrinsic parameters for all cameras (Aria and GoPros)
-    - Sparse 3D point clouds of static environment
-- 3D eye gaze vectors 
-- Pre-extracted video features for all takes and associated cameras
+- Sensor-based Data (Video, Audio, IMU)
+    - [Unprocessed capture-level](/data/unprocessed): video, audio and IMU data 
+        - Video: 4k@60FPS (MP4) for GoPro devices and 1404x1404@30FPS (VRS) for Aria devices
+        - Audio: 7 channel audio for Aria (VRS); 128kbps AAC compression, 48kHz, stereo audio for GoPro cameras
+        - IMU: 2 x 1kHZ for Aria (left and right side)  [VRS file format]
+    - [Take-separated & time-synchronized data](/data/trimmed_takes):
+        - MP4 video&audio data: all camera feeds are compressed with H264 (slow, 24, yuv420p) 
+            - Downscaled variants of the above are available (448px short-side)
+        - Trimmed Aria VRS & trajectory data
+    - Pre-rendered collage videos integrating all views/cameras (for visualization purposes)
+- [Aria’s Machine Perception Services (MPS)](/data/mps)
+    - Calibrated camera parameters (intrinsics) for all cameras (in VRS file)
+    - [3D camera poses](/data/mps#trajectory) (trajectories / extrinsic parameters) for all cameras
+    - [Sparse 3D point clouds of static environment](/data/mps#point-clouds)
+    - [3D eye gaze vectors](/data/mps#eye-gaze)
+- Pre-extracted video features for all takes and associated cameras, see (../data/features)
 
 ### Annotations
 
@@ -46,7 +42,7 @@ Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) a
     - Procedural activities time-segmented into regions classified within hierarchical taxonomy, with the intention to breakdown the high-level goal(s) into keysteps; 
 - [Object Segmentation Mask Tracks](../annotations/relations)
     - Across egocentric and at least one exocentric view
-- [Human body and hand joints](../annotations/ego_pose)
+- [Human body and hand joints](../annotations/ego_pose) (human annotated & automatically generated)
     - 2D Keypoints
         - 17 body keypoints
         - 2 x 21 hand keypoints
@@ -54,13 +50,13 @@ Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) a
         - 17 Triangulated body joints
         - 2 x 21 Triangulated hand joints
 
-### Language
+### Language-Video Aligned Data
 
-- [Expert Commentary](../annotations/expert_commentary)
+- [Expert Commentary](../annotations/expert_commentary) (the *"what"* from a layman's third-person perspective)
     - Professional coaches and domain experts evaluate task performance at key moments in the videos
-- [Atomic Actions](../annotations/atomic_descriptions)
-    - Text descriptions for every 5 seconds of video
-- Narrate and Act
+- [Atomic Actions](../annotations/atomic_descriptions) (the *"how"* from an expert's third-person perspective) 
+    - Text descriptions at densely sampled timepoints across the video, and also includes information about the most informative view and whether the action is visible from the egocentric camera.
+- Narrate and Act (the *"why and how"* from the participant's perspective)
     - Participant describes why and how as they perform their task
 
 ### Meta-data
@@ -68,14 +64,14 @@ Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) a
 - Task Labels
     - Each take consists of a camera wearer performing a predefined task, the
       task label is available.
-- Participant Surveys
+- Participant Surveys (*to be released*)
     - Before (pre) and after (post) survey data answered by the participant to the help asses the proficiency of the camera wearer with normalized proficiency categories per domain
 
 ### Utilities
 
-- Data downloader
-- Data visualization website
+- [Data downloader](/download)
+- [Data visualization website](https://visualize.ego4d-data.org/)
 - [Example usage notebooks](https://github.com/facebookresearch/Ego4d/tree/main/notebooks/egoexo)
 - [Code utilities](https://github.com/facebookresearch/Ego4d/tree/main?tab=readme-ov-file#summary)
 
-There are seven benchmark tasks derived from the annotations. The benchmark tasks form the Challenge we will host for 2024.
+There are seven benchmark tasks derived from the annotations. The benchmark tasks form the [Challenge](/challenge) we will host for 2024.

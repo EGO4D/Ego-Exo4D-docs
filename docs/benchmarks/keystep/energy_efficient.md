@@ -2,8 +2,10 @@
 title: Energy Efficient
 # sidebar_position: 4
 ---
+
+Online activity detection within an energy budget.
+
 ### Task definition
-<!-- Online activity detection within a compute budget. -->
 The goal is to perform online classification of keysteps in a streaming egocentric multi-modal video, within an energy budget. Given a stream of audio and RGB video data, a model must identify the keystep being performed at each frame, as well as decide which sensor(s) to use for subsequent time-steps. 
 
 

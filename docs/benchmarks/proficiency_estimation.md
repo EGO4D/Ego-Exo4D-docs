@@ -2,6 +2,9 @@
 title: Proficiency Estimation
 ---
 
+Predict the absolute skill level of a participant or identify good actions and
+tips for improvement.
+
 ### Task definition
 Going beyond recognizing what a person is doing, this task aims to infer the user’s skill level. We consider two variants: **demonstrator proficiency estimation** and **demonstration proficiency estimation**.
 

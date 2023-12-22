@@ -2,6 +2,8 @@
 title: Correspondence
 ---
 
+Correspond object instance mask(s) in one view with another.
+
 ### Task definition
 
 Given a pair of synchronized ego-exo videos and a sequence of query masks of an object of interest in one of the videos, the task is to predict the corresponding mask for the same object in each synchronized frame of the other view if it is visible. The task can be posed with query objects in either the ego or exo video, with both directions presenting interesting challenges (e.g., high degree of occlusion in ego views, and small object size in exo views).

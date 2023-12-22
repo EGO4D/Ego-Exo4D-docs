@@ -2,6 +2,8 @@
 title: EgoBodyPose
 ---
 
+Predict the 3D body pose from the egocentric perspective.
+
 ## Task definition
 
 - In this task, we aim at recovering the skilled 3D body movements of the camera-wearer from ego-video and headset poses. Note that some methods may only use the ego-video, some methods only use the headset poses, while some methods use both signals, so please indicate which input(s) your method is using for easy comparisons in the future.

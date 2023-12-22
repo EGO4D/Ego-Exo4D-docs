@@ -3,6 +3,8 @@ title: Fine-grained Keystep Recognition
 sidebar_position: 1
 ---
 
+Predict the keystep for a given video clip (trimmed by time).
+
 ### Task definition
 
 This task involves recognizing fine-grained keysteps from procedural egocentric videos (at test time), using models that can leverage multiple, time-synchronized views (at training time).
