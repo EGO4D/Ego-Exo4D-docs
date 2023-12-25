@@ -3,6 +3,8 @@ title: Atomic Action Descriptions
 sidebar_position: 5
 ---
 
+Short-term atomic descriptions spread across the video.
+
 ### Atomic Action Descriptions
 
 :::info

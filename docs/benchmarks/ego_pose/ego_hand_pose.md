@@ -2,6 +2,8 @@
 title: EgoHandPose
 ---
 
+Predict the 3D hand pose from the egocentric perspective.
+
 ## Introduction
 
 The ego hand pose task entails predicting the three-dimensional coordinates of the camera wearer’s hands from the egocentric frames. 

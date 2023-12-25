@@ -3,12 +3,14 @@ title: Task Graph
 sidebar_position: 2
 ---
 
+Determine how each task should be performed (using keysteps) based on a given video segment.
+
 ### Task Definition
 Given a video segment $s_i$ and its segment history $S_{:i-1}=\{s_1, \ldots, s_{i-1}\}$, models have to:
 1. Determine the list of previous keysteps to be performed before $s_i$;
-2. Infer if $s_i$ is an optional keystep (i.e., the procedure can be completed even skipping this keystep);
-3. Infer if $s_i$ is a procedural mistake, i.e., a mistake due to incorrect keystep ordering;
-4. Predict a list of missing keysptes. These are kesyteps which should have been performed before $s_i$ but have not been performed;
+2. Infer if $s_i$ is an optional keystep, i.e. the procedure can be completed even skipping this keystep;
+3. Infer if $s_i$ is a procedural mistake, i.e. a mistake due to incorrect keystep ordering;
+4. Predict a list of missing keysteps. These are keysteps which should have been performed before $s_i$ but have not been performed;
 5. Forecast next keysteps. These are keysteps for which dependencies are satisfied after the execution of $s_i$ and hence can be executed next.
 
 The task is weakly supervised, with two versions based on two different levels of supervision: 1) instance-level: segments and their keystep labels are available during training and inference; 2) procedure-level: unlabeled segments and procedure-specific keystep names are given for training and inference.

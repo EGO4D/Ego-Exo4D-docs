@@ -2,6 +2,9 @@
 title: Translation
 ---
 
+Translate a mask in an observed egocentric view to an unobserved exocentric
+view (translate the segmentation mask or the pixels).
+
 ### Task definition
 
 Translation task entails synthesizing a target ego clip from a given exo clip. This is decomposed into two separate tasks: **ego track prediction** and **ego clip generation**.
