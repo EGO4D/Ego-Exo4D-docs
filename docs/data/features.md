@@ -49,7 +49,7 @@ Where:
   extract features from the SLAM (L/R) or Eye cameras
 
 For training purposes, we recommend you pre-process them into a HDF5 dataset, see the function [`save_ego4d_features_to_hdf5`](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/research/dataset.py#L47)
-to do so and
+to do so (you will have to modify it) and
 [LabelledFeatureDset](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/research/dataset.py#L13)
 for usage during training; you can refer to
 [clep](https://github.com/facebookresearch/Ego4d/tree/main/ego4d/research/clep)
