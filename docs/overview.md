@@ -24,7 +24,7 @@ Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) a
         - Video: 4k@60FPS (MP4) for GoPro devices and 1404x1404@30FPS (VRS) for Aria devices
         - Audio: 7 channel audio for Aria (VRS); 128kbps AAC compression, 48kHz, stereo audio for GoPro cameras
         - IMU: 2 x 1kHZ for Aria (left and right side)  [VRS file format]
-    - [Take-separated & time-synchronized data](/data/trimmed_takes):
+    - Take-separated & time-synchronized data:
         - MP4 video&audio data: all camera feeds are compressed with H264 (slow, 24, yuv420p) 
             - Downscaled variants of the above are available (448px short-side)
         - Trimmed Aria VRS & trajectory data
