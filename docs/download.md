@@ -13,7 +13,7 @@ Github README](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setu
 
 :::warning
 
-If you have downloaded the data prior to Friday the 15th, 2023: 5PM (PST)
+If you have downloaded the data prior to December 15th (Friday), 2023: 5PM (PST)
 and/or have files downloaded in `<download_dir>/takes/takes` or
 `<download_dir/captures/captures` this is due to a bug. These files should live
 in `<download_dir>/takes/` or `<download_dir>/captures/`. 

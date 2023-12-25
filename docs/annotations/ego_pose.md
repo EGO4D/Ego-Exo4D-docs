@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::important
 EgoPose annotations are currently not available. It is expected to be released
-on Jan the 7th, 2024. We apologize for the inconvenience.
+on Jan 7th, 2024. We apologize for the inconvenience.
 :::
 
 # EgoPose Annotations
