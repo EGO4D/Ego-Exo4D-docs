@@ -3,10 +3,6 @@ title: MPS
 sidebar_position: 3
 ---
 
-:::info
-Take-trimmed variants of MPS data is coming soon.
-:::
-
 MPS stands for "Machine Perception Services" and are a service provided by the
 Aria device recordings.
 

@@ -20,11 +20,11 @@ Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) a
 ### Data
 
 - Sensor-based Data (Video, Audio, IMU)
-    - [Unprocessed capture-level](/data/unprocessed): video, audio and IMU data 
+    - Video, audio and IMU data 
         - Video: 4k@60FPS (MP4) for GoPro devices and 1404x1404@30FPS (VRS) for Aria devices
         - Audio: 7 channel audio for Aria (VRS); 128kbps AAC compression, 48kHz, stereo audio for GoPro cameras
         - IMU: 2 x 1kHZ for Aria (left and right side)  [VRS file format]
-    - Take-separated & time-synchronized data:
+    - [Take-separated & time-synchronized](./data/takes) data:
         - MP4 video&audio data: all camera feeds are compressed with H264 (slow, 24, yuv420p) 
             - Downscaled variants of the above are available (448px short-side)
         - Trimmed Aria VRS & trajectory data
@@ -34,7 +34,7 @@ Ego-Exo4D is a large-scale multi-modal multi-view video dataset (including 3D) a
     - [3D camera poses](/data/mps#trajectory) (trajectories / extrinsic parameters) for all cameras
     - [Sparse 3D point clouds of static environment](/data/mps#point-clouds)
     - [3D eye gaze vectors](/data/mps#eye-gaze)
-- Pre-extracted video features for all takes and associated cameras, see (../data/features)
+- [Pre-extracted video features](/data/features) for all takes and associated cameras
 
 ### Annotations
 
