@@ -30,12 +30,16 @@ The different parts of the dataset include:
 - **annotations**
 - **takes**
 - **captures**
-- **trajectory**
-- eye_gaze
-- point_cloud
-- capture_raw_stitched_videos
-- capture_raw_vrs
-- ego_pose_pseudo_gt
+- **take_trajectory**
+- **take_eye_gaze**
+- **take_vrs_noimagestream**
+- take_point_cloud
+- take_vrs
+- capture_trajectory
+- capture_eye_gaze
+- capture_point_cloud
+- downscaled_takes/448
+- features/omnivore_video
 
 The parts in bold refer to the *recommended set*. You can additionally filter based on:
 - Data relevant to a specific [benchmarks](../benchmarks): `--benchmarks <benchmark_name>`
@@ -80,12 +84,12 @@ Download all annotations & metadata:
 egoexo -o <out-dir> --parts annotations metadata
 ```
 
-Download all point clouds, eye gaze and trajectories:
+Download all point clouds, eye gaze and trajectories for each take:
 ```
-egoexo -o <out-dir> --parts point_cloud eye_gaze trajectory
+egoexo -o <out-dir> --parts take_point_cloud take_eye_gaze trajectory
 ```
 
 Download all point clouds, eye gaze and trajectories:
 ```
-egoexo -o <out-dir> --parts point_cloud eye_gaze trajectory
+egoexo -o <out-dir> --parts take_point_cloud eye_gaze take_trajectory
 ```
