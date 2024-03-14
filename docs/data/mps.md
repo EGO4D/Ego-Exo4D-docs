@@ -47,3 +47,5 @@ Below is some basic information about eye gaze:
 - You can determine if a take or capture has eye gaze by using the field `has_gaze` for a capture and `has_trimmed_gaze` for a take. 
     - If eye gaze is available for the take, it is trimmed (cropped in time) with respect to that take.
 - [Here is a code sample](https://facebookresearch.github.io/projectaria_tools/docs/data_utilities/core_code_snippets/mps#eye-gaze) on how to read the eye gaze data from Project Aria
+
+To quickly start using MPS in code, see the [MPS Quickstart Notebook](https://github.com/facebookresearch/projectaria_tools/blob/main/core/examples/mps_quickstart_tutorial.ipynb).
