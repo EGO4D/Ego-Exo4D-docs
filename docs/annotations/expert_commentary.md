@@ -3,6 +3,11 @@ title: Expert Commentary
 sidebar_position: 6
 ---
 
+:::info
+- To download transcriptions use `--parts annotations`. You can use `--benchmarks expert_commentary` to filter for just the transcription file.
+- To download all data for expert commentary use `--parts expert_commentary` (and `--parts annotations` for train/val split transcription file)
+:::
+
 # Expert Commentary
 
 Please refer to the [jupyter notebook tutorial](https://github.com/facebookresearch/Ego4d/blob/main/notebooks/egoexo/EgoExo_Expert_Commentary_Tutorial.ipynb) for an overview and how to use the annotation files available.
@@ -20,9 +25,9 @@ The expert commentary consists of three types of data:
 
 # Annotations Structure
 
-We transcribe each annotation and aggregate these transcriptions into a single JSON file per split. The test set is redacted due to the [Proficiency benchmark task](/benchmarks/proficiency_estimation/). This single annotation file (per split) does not include spatial drawing data or proficiency information, but can be used to refer to the more granular annotation data as described below.
+We transcribe each annotation and aggregate these transcriptions into a single JSON file per split (`--parts annotations`). The test set is redacted due to the [Proficiency benchmark task](/benchmarks/proficiency_estimation/). This single annotation file (per split) does not include spatial drawing data or proficiency information, but can be used to refer to the more granular annotation data as described below.
 
-For proficiency and spatial drawing data, you will need to refer to the `expert_commentary` folder under the `annotations` folder. To read the spatial drawing correct, please refer to the function [`get_paths_for_commentary_time` in the python module `ego4d.egoexo.expert_commentary`](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/egoexo/expert_commentary.py#L4) (example usage is shown in the [tutorial notebook](https://github.com/facebookresearch/Ego4d/blob/main/notebooks/egoexo/EgoExo_Expert_Commentary_Tutorial.ipynb)).
+For proficiency and spatial drawing data, you will need to refer to the `expert_commentary` folder under the `annotations` folder (you will need to download with `--parts expert_commentary`). To read the spatial drawing correct, please refer to the function [`get_paths_for_commentary_time` in the python module `ego4d.egoexo.expert_commentary`](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/egoexo/expert_commentary.py#L4) (example usage is shown in the [tutorial notebook](https://github.com/facebookresearch/Ego4d/blob/main/notebooks/egoexo/EgoExo_Expert_Commentary_Tutorial.ipynb)).
 
 This folder is structured as follows:
 
