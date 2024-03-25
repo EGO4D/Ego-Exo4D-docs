@@ -26,20 +26,21 @@ The dataset is large, due to this it is partitioned into separate "parts"
 optional filters in order to reduce how much you need to download.
 
 The different parts of the dataset include: 
-- **metadata**
-- **annotations**
-- **takes**
-- **captures**
-- **take_trajectory**
-- **take_eye_gaze**
-- **take_vrs_noimagestream**
-- take_point_cloud
-- take_vrs
-- capture_trajectory
-- capture_eye_gaze
-- capture_point_cloud
-- downscaled_takes/448
-- features/omnivore_video
+- **`metadata`**
+- **`annotations`**
+- **`takes`**
+- **`captures`**
+- **`take_trajectory`**
+- **`take_eye_gaze`**
+- **`take_vrs_noimagestream`**
+- `take_point_cloud`
+- `take_vrs`
+- `capture_trajectory`
+- `capture_eye_gaze`
+- `capture_point_cloud`
+- `downscaled_takes/448`
+- `features/omnivore_video`
+- `features/maws_clip`
 
 The parts in bold refer to the *recommended set*. You can additionally filter based on:
 - Data relevant to a specific [benchmarks](../benchmarks): `--benchmarks <benchmark_name>`

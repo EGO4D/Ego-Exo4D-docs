@@ -4,6 +4,10 @@ sidebar_position: 1
 slug: /
 ---
 
+:::info
+Ego-Exo4D V2 is released which includes 1286.30 video hours (221.26 ego-hours) across 5035 takes (171% more data than V1). It also includes a significant more amount of annotations, please refer to the [Change Log](/changelog) for more details.
+:::
+
 Ego-Exo4D is a diverse, large-scale multimodal multiview video dataset and benchmark challenge. Ego-Exo4D centers around simultaneously captured and timesynced egocentric and exocentric video of skilled human activities . More than 800 participants from 13 cities worldwide performed these activities in 131 different natural scene contexts, yielding long-form captures from 1 to 42 minutes each and 1,422 hours of video combined. The dataset contains skilled activites covering both physical (Soccer, Basketball, Dance, Bouldering, Music) and procedural (Cooking, Bike Repair, Health) tasks.
 
 
