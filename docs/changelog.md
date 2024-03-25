@@ -1,5 +1,6 @@
 ---
 title: Change Log
+sidebar_position: 99
 ---
 
 ## V2
