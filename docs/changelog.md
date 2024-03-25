@@ -11,7 +11,29 @@ Ego-Exo4D V2 is announced. Please see the forum for the announcement post: TODO
 
 A summary of changes are listed below:
 
-TODO
+#### Data
+- **1286.30 total video hours** across **5035 takes** (*221.26 ego-centric hours*). Comparing to V1:
+    - 1341 additional takes: spanning 254.8 more total hours (44.4 ego-hours)
+    - 119 additional Narrate & Act takes (456 takes)
+- 99% of takes contain eye gaze (2D and 3D), trajectory data and 3D point clouds
+- Note on **Dataset Quality**: each take is verified to have the correct task ID label by external annotators and verified by university data POCs. Please see this [forum post for additional context](https://discuss.ego4d-data.org/t/ego-exo4d-dataset-changes-quality-issues-future-update/463)
+
+#### Annotations
+- **NEW:** EgoPose Ground-Truth Annotations (68K 3D and 340K 2D poses over 458 takes) and Pseudo-Annotations (4.3M 3D and 21M 2D poses over 976 takes)
+- **NEW:** Best exocentric labels available for 90% of the takes
+- **NEW:** Tight take time boundaries indicating when the task occurs within a take
+- **NEW:** Expert Commentary: 11,689 annotations covering 3,055 takes (117,812 audio recordings) annotated from 50 experts
+- **NEW:** Transcriptions for Narrate & Act takes (TODO)
+- **UPDATED:** Atomic Actions Descriptions covering 4965 takes with 432,467 text descriptions. Comparing to V1:
+    - 172% more descriptions (250,742 descriptions in V1) across 2,202 more takes
+    - **Bug fix:** "unsure" and "best exo" fields corrected
+- **UPDATED:** Relation Annotations 2.2M segmentation masks across 1653 takes. Comparing to V1:
+    - 832,733 more segmentation masks across 396 more takes
+- **UPDATED:** Train/val/test sets now cover all takes in the dataset: 3072 train/842 val/1121 test
+
+#### Accessibility
+- **NEW:** MAWS CLIP features for each frame of video in Ego-Exo4D
+- **NEW:** 2D eye gaze for 99% of takes (derived from the 3D eye gaze; projected into the egocentric image plane)
 
 
 ## V1
