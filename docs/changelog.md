@@ -18,7 +18,7 @@ A summary of changes are listed below:
     - 1341 additional takes: spanning 254.8 more total hours (44.4 ego-hours)
     - 119 additional Narrate & Act takes (456 takes)
 - 99% of takes contain eye gaze (2D and 3D), trajectory data and 3D point clouds
-- **Note on Dataset Quality:** each take is verified to have the correct task ID label by external annotators and verified by university data POCs. Please see this forum post for additional context: https://discuss.ego4d-data.org/t/ego-exo4d-dataset-changes-quality-issues-future-update/463
+- **Note on Dataset Quality:** each take is verified to have the correct task ID label by external annotators and verified by university data POCs. Please see this [forum post](https://discuss.ego4d-data.org/t/ego-exo4d-dataset-changes-quality-issues-future-update/463) for additional context.
 - ***NEW:*** Best exocentric labels available for 90% of the takes
     - Available in [`takes.json`](/data/metadata/#takes) under the field `"best_exo"`
 - ***NEW:*** Tight take time boundaries indicating when the task occurs within a take
@@ -44,6 +44,7 @@ A summary of changes are listed below:
 #### Accessibility
 - ***NEW:*** Transcriptions and pre-extracted audio all takes, including Narrate & Act takes, where camera-wearers verbally describe what they are doing while they are doing it. 
     - Download with `--parts take_audio` and `--parts take_transcription`
+    - Note, this data is only for the egocentric aria file.
     - Thanks [@juliawilkins](https://github.com/facebookresearch/Ego4d/issues/288) for the pre-extracted audio suggestion.
 - ***NEW:*** [MAWS CLIP](https://github.com/facebookresearch/Ego4d/pull/301) features for each frame of video in Ego-Exo4D
 - ***NEW:*** 2D eye gaze for 99% of takes (derived from the 3D eye gaze; projected into the egocentric image plane)
