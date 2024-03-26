@@ -33,6 +33,8 @@ The different parts of the dataset include:
 - **`take_trajectory`**
 - **`take_eye_gaze`**
 - **`take_vrs_noimagestream`**
+- `take_audio`
+- `take_transcription`
 - `take_point_cloud`
 - `take_vrs`
 - `capture_trajectory`
@@ -40,7 +42,8 @@ The different parts of the dataset include:
 - `capture_point_cloud`
 - `downscaled_takes/448`
 - `features/omnivore_video`
-- `features/maws_clip`
+- `features/maws_clip_2b`
+- `ego_pose_pseudo_gt`
 
 The parts in bold refer to the *recommended set*. You can additionally filter based on:
 - Data relevant to a specific [benchmarks](../benchmarks): `--benchmarks <benchmark_name>`

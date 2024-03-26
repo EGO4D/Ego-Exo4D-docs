@@ -4,8 +4,10 @@ sidebar_position: 4
 ---
 
 :::important
-EgoPose annotations are currently not available. It is expected to be released
-on Jan 7th, 2024. We apologize for the inconvenience.
+EgoPose annotations are now available in V2 and V1 of the dataset.
+[Download](/download) with `--parts annotations --benchmarks egopose`. You can
+also download with `--benchmarks handpose` or `--benchmarks bodypose` to filter
+just body or hand pose annotations.
 :::
 
 # EgoPose Annotations
