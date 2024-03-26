@@ -9,8 +9,8 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'EgoExo4D Documentation',
-  tagline: 'EgoExo4D Documentation',
+  title: 'Ego-Exo4D Documentation',
+  tagline: 'Ego-Exo4D Documentation',
   favicon: 'img/favicon.ico',
   url: 'https://fairinternal.github.io/',
   baseUrl: '/',
@@ -62,7 +62,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'EgoExo4D',
+        title: 'Ego-Exo4D',
         logo: {
           alt: 'EgoExo4D Logo',
           src: 'img/logo.svg',

@@ -9,6 +9,8 @@ sidebar_position: 99
 
 Ego-Exo4D V2 is announced. Please see the forum for the announcement post.
 
+You may download the new data by upgrading your CLI tool or using the flag `--release v2`.
+
 A summary of changes are listed below:
 
 #### Data
