@@ -22,7 +22,6 @@ The following describes the data that is trimmed at the take-level (& how to dow
     - Note: since this data is sampled at 1kHZ (due to IMU), to perform
       matching: we recommend rounding the time (in nanoseconds) for the frame
       to the nearest time stamp in the trajectory file
-        - Thi
     - See [MPS](/data/mps#trajectory)
 - Eye gaze (`--parts takes`)
     - Similar to trajectory, but for eye gaze. See [MPS](/data/mps#eye-gaze)

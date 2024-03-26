@@ -20,10 +20,12 @@ A summary of changes are listed below:
 - 99% of takes contain eye gaze (2D and 3D), trajectory data and 3D point clouds
 - **Note on Dataset Quality:** each take is verified to have the correct task ID label by external annotators and verified by university data POCs. Please see this forum post for additional context: https://discuss.ego4d-data.org/t/ego-exo4d-dataset-changes-quality-issues-future-update/463
 - ***NEW:*** Best exocentric labels available for 90% of the takes
+    - Available in [`takes.json`](/data/metadata/#takes) under the field `"best_exo"`
 - ***NEW:*** Tight take time boundaries indicating when the task occurs within a take
+    - Available in [`takes.json`](/data/metadata/#takes) under the field `"task_start_sec"` / `"task_end_sec"`
 
 #### Annotations
-- ***UPDATED:*** Expert Commentary: 11,689 annotations covering 3,055 takes (117,812 audio recordings) annotated from 50 experts
+- ***UPDATED:*** [Expert Commentary](/annotations/expert_commentary): 11,689 annotations covering 3,055 takes (117,812 audio recordings) annotated from 50 experts
 - ***UPDATED:*** EgoPose (Body) human generated ground truth available for 1,358 takes containing 376K 3D body poses and 2M 2D body pose annotations. Automatic annotations covering 2559 takes, 9.2M 3D body poses and 46.87M 2D body poses are also available.
 - ***UPDATED:*** EgoPose (Hand) human generated ground truth available for 458 takes containing 68K 3D hand poses and 340K 2D hand pose annotations. Automatic annotations covering 976 takes, 4.3M 3D hand poses and 21M 2D hand poses are also available.
 - ***UPDATED:*** Atomic Actions Descriptions covering 4,965 takes with 432,467 text descriptions. Comparing to V1:
