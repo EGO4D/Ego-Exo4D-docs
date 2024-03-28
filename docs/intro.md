@@ -5,7 +5,7 @@ slug: /
 ---
 
 :::tip
-Ego-Exo4D V2 is released which includes **1286.30** video hours (**221.26 ego-hours**) across 5035 takes (171% more data than V1). It also includes significantly **more annotations**, please refer to the [Change Log](/changelog) for more details.
+Ego-Exo4D V2 is released which includes **1286.30** video hours (**221.26 ego-hours**) across 5035 takes. It also includes significantly **more annotations**, please refer to the [Change Log](/changelog) for more details.
 
 Upgrade your ego4d pip package or use `--release v2` when you download.
 :::
