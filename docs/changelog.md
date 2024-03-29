@@ -5,6 +5,9 @@ sidebar_position: 99
 
 ## V2
 
+### March 28, 2024
+- ego4d pip package `1.7.1` released, which starting your download significantly faster than previous versions. Upgrade your pip package!
+
 ### March 25, 2024
 
 Ego-Exo4D V2 is announced. Please see the forum for the announcement post.

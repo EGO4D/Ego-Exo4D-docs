@@ -9,12 +9,12 @@ As a pre-requisite, you must:
 [Getting Started](../getting-started) page. *The License Agreement process takes 2 days: so do it early!*
 2. Have **setup or installed the Ego4D** codebase, please refer to the [Ego4D
 Github README](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup).
+3. Configure your `aws` client, please [see below](#setup-aws-client).
 :::
 
 :::tip
-Ego-Exo4D V2 is released which includes **1286.30** video hours (**221.26 ego-hours**) across 5035 takes. It also includes significantly **more annotations**, please refer to the [Change Log](/changelog) for more details.
-
-Upgrade your ego4d pip package or use `--release v2` when you download.
+1. Upgrade your ego4d pip package to `1.7.1` or above to enable faster downloads
+2. Ensure you have [setup your aws client](#setup-aws-client)
 :::
 
 
@@ -62,8 +62,21 @@ The parts in **bold** refer to the **recommended set** (**default**). You can ad
 
 Please refer to the Download [CLI README](https://github.com/facebookresearch/Ego4d/tree/main/ego4d/egoexo/download) or use the flag `--help` for the latest parts of the dataset and additional usage of the dataset.
 
+## Setup AWS Client
 
-# Download The Data {#download-dataset-c}
+To setup your aws client, you will need to:
+1. Install the aws-cli pip package, i.e. `pip install awscli`
+2. Run `aws configure` or ([see the official docs](https://github.com/aws/aws-cli?tab=readme-ov-file#configuration))
+
+When running `aws configure` you simply need to enter your access key & secret key and then press Enter twice to follow the default region and output format.
+
+You can have multiple profiles setup no your machine. To tell the downloader which profile to use, simply use the flag `--profile <name>`.
+
+## Download The Data {#download-dataset-c}
+
+:::info
+Before you download data, please [setup your aws client](#setup-aws-client).
+:::
 
 Below are some examples on how to run the downloader CLI with common options:
 
