@@ -70,7 +70,7 @@ To setup your aws client, you will need to:
 
 When running `aws configure` you simply need to enter your access key & secret key and then press Enter twice to follow the default region and output format.
 
-You can have multiple profiles setup no your machine. To tell the downloader which profile to use, simply use the flag `--profile <name>`.
+You can have multiple profiles setup on your machine. To tell the downloader which profile to use, simply use the flag `--s3_profile <name>`.
 
 ## Download The Data {#download-dataset-c}
 
@@ -116,3 +116,5 @@ Download all point clouds, eye gaze and trajectories:
 ```
 egoexo -o <out-dir> --parts take_point_cloud eye_gaze take_trajectory
 ```
+
+
