@@ -23,26 +23,32 @@ The dataset is large, due to this it is partitioned into separate "parts"
 optional filters in order to reduce how much you need to download.
 
 The different parts of the dataset include: 
-- **`metadata`**
-- **`annotations`**
-- **`takes`**
-- **`captures`**
-- **`take_trajectory`**
-- **`take_eye_gaze`**
-- **`take_vrs_noimagestream`**
-- `take_audio`
-- `take_transcription`
-- `take_point_cloud`
-- `take_vrs`
-- `capture_trajectory`
-- `capture_eye_gaze`
-- `capture_point_cloud`
-- `downscaled_takes/448`
-- `features/omnivore_video`
-- `features/maws_clip_2b`
-- `ego_pose_pseudo_gt`
 
-The parts in bold refer to the *recommended set*. You can additionally filter based on:
+| Part | Size (GB) | Description |
+| -----|-----------|-------------|
+| **metadata** | 0.046 | See [metadata](/data/metadata) |
+| **annotations** | 9.268 | All the [annotations](/annotations/) in Ego-Exo4D |
+| **takes** | 10553.486 | Frame aligned video files associated to the [takes](/data/takes)  |
+| **captures** | 43.618 | Timesync and post-survey data at the capture level (multiple takes)  |
+| **take_trajectory** | 509.503 | [Trajectories](/data/mps/#trajectory) trimmed at each take |
+| take_eye_gaze | 3.265 | [Eye gaze](/data/mps/#eye-gaze) for each take (3D & 2D) |
+| take_point_cloud | 6164.615 | [Point clouds](/data/mps#point-clouds) for each take |
+| take_vrs | 12301.458 | VRS files for each take |
+| **take_vrs_noimagestream** | 995.592 | VRS files for each take without image stream data (video data within MP4 containers with `--parts takes`) |
+| capture_trajectory | 851.691 | [Trajectory](/data/mps#trajectory) at the capture-level |
+| capture_eye_gaze | 5.619 | [Eye gaze](/data/mps#eye_gaze) at the capture-level (3D)  |
+| capture_point_cloud | 4750.039 | [Point clouds](data/mps/#point-clouds) for each capture |
+| downscaled_takes/448 | 438.556 | [Downscaled takes](data/downscaled_takes/) at 448px on the shortest side |
+| features/omnivore_video | 49.986 | Omnivore video [features](/data/features) |
+| features/maws_clip_2b | 533.826 | [MAWS CLIP](https://github.com/facebookresearch/maws) ([ViT-2b](https://github.com/facebookresearch/maws?tab=readme-ov-file#maws-pretrained-models)) [features](/data/features) for each frame of video |
+| ego_pose_pseudo_gt | 138.629 | Pseudo-ground truth data for [Ego Pose](/annotations/ego_pose/) |
+| expert_commentary | 42.292 | [Commentaries](/annotations/expert_commentary) for each expert (audio recordings) |
+| take_transcription | 0.094 | [Audio transcriptions](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/egoexo/scripts/extract_audio_transcribe.py#L22-L47) for each take |
+| take_audio | 1056.907 | [Audio files](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/egoexo/scripts/extract_audio_transcribe.py#L22-L47) for the egocentric aria camera  |
+| *all* | 38448.488 | All data within the release (you can use `--parts all`)  |
+| **default ** | 12111.512 | The default set of data in the release (you can use `--parts default` or provide no parts) |
+
+The parts in **bold** refer to the **recommended set** (**default**). You can additionally filter based on:
 - Data relevant to a specific [benchmarks](../benchmarks): `--benchmarks <benchmark_name>`
     - e.g. `--benchmarks keystep relations`
 - Dataset splits (train/val/test): `--splits <s1> <s2> ...`, e.g.
@@ -71,12 +77,15 @@ egoexo --help
 ### Recommended Dataset
 Download suggested dataset parts for all the takes present.
 
-:::warning This will download ~14TiB of data
-:::
 ```
 egoexo -o <out-dir>
 ```
 
+This is equivalent to
+
+```
+egoexo -o <out-dir> --parts default
+```
 
 #### Other Examples
 
