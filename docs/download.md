@@ -23,11 +23,10 @@ The dataset is large, due to this it is partitioned into separate "parts"
 optional filters in order to reduce how much you need to download.
 
 The different parts of the dataset include: 
-
 | Part | Size (GB) | Description |
 | -----|-----------|-------------|
 | **metadata** | 0.046 | See [metadata](/data/metadata) |
-| **annotations** | 9.268 | All the [annotations](/annotations/) in Ego-Exo4D |
+| **annotations** | 10.528 | All the [annotations](/annotations/) in Ego-Exo4D |
 | **takes** | 10553.486 | Frame aligned video files associated to the [takes](/data/takes)  |
 | **captures** | 43.618 | Timesync and post-survey data at the capture level (multiple takes)  |
 | **take_trajectory** | 509.503 | [Trajectories](/data/mps/#trajectory) trimmed at each take |
@@ -45,8 +44,8 @@ The different parts of the dataset include:
 | expert_commentary | 42.292 | [Commentaries](/annotations/expert_commentary) for each expert (audio recordings) |
 | take_transcription | 0.094 | [Audio transcriptions](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/egoexo/scripts/extract_audio_transcribe.py#L22-L47) for each take |
 | take_audio | 1056.907 | [Audio files](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/egoexo/scripts/extract_audio_transcribe.py#L22-L47) for the egocentric aria camera  |
-| *all* | 38448.488 | All data within the release (you can use `--parts all`)  |
-| **default ** | 12111.512 | The default set of data in the release (you can use `--parts default` or provide no parts) |
+| *all* | 38449.748 | All data within the release (you can use `--parts all`)  |
+| **default** | 12112.773 | The default set of data in the release (you can use `--parts default` or provide no parts) |
 
 The parts in **bold** refer to the **recommended set** (**default**). You can additionally filter based on:
 - Data relevant to a specific [benchmarks](../benchmarks): `--benchmarks <benchmark_name>`
