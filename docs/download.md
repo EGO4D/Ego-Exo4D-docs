@@ -23,6 +23,7 @@ The dataset is large, due to this it is partitioned into separate "parts"
 optional filters in order to reduce how much you need to download.
 
 The different parts of the dataset include: 
+
 | Part | Size (GB) | Description |
 | -----|-----------|-------------|
 | **metadata** | 0.046 | See [metadata](/data/metadata) |
