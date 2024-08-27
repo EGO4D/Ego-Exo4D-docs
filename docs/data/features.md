@@ -30,7 +30,7 @@ Here is how each video is extracted:
 
 There are extracted features from:
 - [Omnivore Swin-L](https://github.com/facebookresearch/omnivore/tree/main/omnivore#model-zoo)
-    This was extracted using a window size of ~32 frames (more accurately 32/30 seconds)
+   -  This was extracted using a window size of ~32 frames (more accurately 32/30 seconds)
 - [MAWS CLIP 2B](https://github.com/facebookresearch/maws)
     - Since this is an image model, each frame has an associated feature
 
@@ -38,11 +38,35 @@ There are extracted features from:
 
 Download with `--parts features/omnivore_video` or `--parts features/maws_clip_2b`.
 
-Once downloaded, each feature will be available under
-`<download-dir>/features/<take_uid>_<cam_id>_<stream_id>.pt`. Use `torch.load` to load each file. 
+Once downloaded, you will see a folder structure as follows:
 
-Where:
-- `<download-dir>`: is the directory you download the data to
+```bash
+$ tree <download_dir>/features/
+<download-dir>/features/
+├── maws_clip_2b
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_aria01_rgb.pt
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_cam01_0.pt
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_cam02_0.pt
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_cam03_0.pt
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_cam04_0.pt
+    ├── 0015bea6-67f2-4602-9419-fc03c742eb4b_aria01_rgb.pt
+    ├── 0015bea6-67f2-4602-9419-fc03c742eb4b_cam01_0.pt
+    ├── 0015bea6-67f2-4602-9419-fc03c742eb4b_cam02_0.pt
+    ...
+├── omnivore_video
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_aria01_rgb.pt
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_cam01_0.pt
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_cam02_0.pt
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_cam03_0.pt
+    ├── 000a19fe-776e-4c88-b0c3-2fad016a6025_cam04_0.pt
+    ├── 0015bea6-67f2-4602-9419-fc03c742eb4b_aria01_rgb.pt
+    ├── 0015bea6-67f2-4602-9419-fc03c742eb4b_cam01_0.pt
+    ├── 0015bea6-67f2-4602-9419-fc03c742eb4b_cam02_0.pt
+    ...
+```
+
+
+Use `torch.load` to load each file. Each file has the pattern: `<take_uid>_<cam_id>_<stream_id>.pt`, where: 
 - `<take_uid>`: is the identifier for the take
 - `<cam_id>`: is the identifier for the camera, e.g. `aria01`, `cam01`, etc. This is
   same ID in the `captures.json` or `takes.json` file
