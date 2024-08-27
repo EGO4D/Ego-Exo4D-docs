@@ -1,6 +1,6 @@
 # EgoExo4D Documentation
 
-This is documentation for EgoExo4D.
+This is the documentation website for EgoExo4D. https://docs.ego-exo4d-data.org/
 
 ## Setup
 
