@@ -6,7 +6,7 @@ sidebar_position: 10
 Pre-extracted features for the dataset, for accessibility & quick iteration purposes.
 
 :::info
-[Download](/download/) with `--parts features/omnivore_video`
+[Download](/download/) with `--parts features/omnivore_video` or `--parts features/maws_clip_2b`
 :::
 
 These are extracted with the same code as Ego4D and hence are the same: [see
@@ -23,18 +23,20 @@ Here is how each video is extracted:
 - A stride of 16/30 seconds is used, with a window size 32/30 seconds. 
     - If the stride is not divisible by the total duration time, then
       the last `[n - 32/30, n)` seconds of video is used as the last window.
+- For image models (MAWS CLIP 2B): each frame is input to the model
 
 
 ## What Features are Available
 
-Currently we only extract features from [Omnivore
-Swin-L](https://github.com/facebookresearch/omnivore/tree/main/omnivore#model-zoo)'s
-video head (`omnivore_video`) using a window size of ~32 frames (more accurately
-32/30 seconds). 
+There are extracted features from:
+- [Omnivore Swin-L](https://github.com/facebookresearch/omnivore/tree/main/omnivore#model-zoo)
+    This was extracted using a window size of ~32 frames (more accurately 32/30 seconds)
+- [MAWS CLIP 2B](https://github.com/facebookresearch/maws)
+    - Since this is an image model, each frame has an associated feature
 
 ## How to Read the Features
 
-Download with `--parts features/omnivore_video`.
+Download with `--parts features/omnivore_video` or `--parts features/maws_clip_2b`.
 
 Once downloaded, each feature will be available under
 `<download-dir>/features/<take_uid>_<cam_id>_<stream_id>.pt`. Use `torch.load` to load each file. 
