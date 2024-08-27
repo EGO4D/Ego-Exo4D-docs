@@ -36,6 +36,11 @@ There are extracted features from:
 
 ## How to Read the Features
 
+:::info
+There is a [tutorial notebook](https://github.com/facebookresearch/Ego4d/blob/main/notebooks/egoexo/EgoExo_MAWS_Features.ipynb) on how to use the MAWS features. This is applicable to Omnivore Video features as well.
+:::
+
+
 Download with `--parts features/omnivore_video` or `--parts features/maws_clip_2b`.
 
 Once downloaded, you will see a folder structure as follows:
@@ -79,4 +84,4 @@ to do so (you will have to modify it) and
 [LabelledFeatureDset](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/research/dataset.py#L13)
 for usage during training; you can refer to
 [clep](https://github.com/facebookresearch/Ego4d/tree/main/ego4d/research/clep)
-as an example.
+as an example or [the tutorial notebook](https://github.com/facebookresearch/Ego4d/blob/main/notebooks/egoexo/EgoExo_MAWS_Features.ipynb). 
