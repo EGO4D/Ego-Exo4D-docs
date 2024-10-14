@@ -10,8 +10,8 @@ sidebar_position: 99
     - The files include:
         * trimmed segment video clips
         * processed versions of the annotation files (under `annotations/keystep_benchmark` when downloaded)
-            * These files were used by the baseline method and serve as a basis of the Keystep Benchmark
-    - Please see the [latest documentation](./benchmarks/keystep) for additional details about these files.
+            * These files were used by the baseline method (from the paper) and serve as a basis of the Keystep Benchmark
+    - Please see the [latest documentation](/benchmarks/keystep/keystep_recoginition/) for additional details about these files.
     - Use:
         - `--parts keystep_benchmark/clips_448p` to download the clips
         - `--parts annotations` to download the annotation files. Refer to the
