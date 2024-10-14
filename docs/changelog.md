@@ -5,6 +5,18 @@ sidebar_position: 99
 
 ## V2
 
+### September 1, 2024
+- Keystep benchmark files are released. Note, this is different to keystep annotations. 
+    - The files include:
+        * trimmed segment video clips
+        * processed versions of the annotation files (under `annotations/keystep_benchmark` when downloaded)
+            * These files were used by the baseline method and serve as a basis of the Keystep Benchmark
+    - Please see the [latest documentation](./benchmarks/keystep) for additional details about these files.
+    - Use:
+        - `--parts keystep_benchmark/clips_448p` to download the clips
+        - `--parts annotations` to download the annotation files. Refer to the
+          folder `<download-dir>/annotations/keystep_benchmark`
+
 ### March 28, 2024
 - ego4d pip package `1.7.1` released, which starting your download significantly faster than previous versions. Upgrade your pip package!
 
