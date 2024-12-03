@@ -17,8 +17,8 @@ The following describes the data that is trimmed at the take-level (& how to dow
     - This VRS file includes camera intrinics, IMU, audio data and optionally image stream data (RGB camera, left/right slam cameras)
     - If a VRS file is suffixed with `_noimagestreams` then this VRS file will not contain image stream data (as the name suggests)
     - Use `--parts takes` to download VRS files without image stream data and `--parts take_vrs` for VRS files with image stream data
-- Trajectory (`--parts take_trajectory`) 
-    - Use this data to get the 3D location of the camera wearer at each point in time 
+- Trajectory (`--parts take_trajectory`)
+    - Use this data to get the 3D location of the camera wearer at each point in time
     - Note: since this data is sampled at 1kHZ (due to IMU), to perform
       matching: we recommend rounding the time (in nanoseconds) for the frame
       to the nearest time stamp in the trajectory file
@@ -36,7 +36,7 @@ Within each capture, the following information is present.
 Timesync information is present for each capture when downloading via `--parts captures`. This data is available as `capture/<capture_name>/timesync.csv`.
 
 The timesync information is present as a CSV file. Where each row in the CSV file
-describes a matching timestamp & frame number for each camera. 
+describes a matching timestamp & frame number for each camera.
 
 The columns of the CSV file are of the format `<cam_id>_pts` and
 `<cam_id>_frame_number` for the Presentation Time-Stamp (PTS) and frame number
@@ -44,6 +44,13 @@ respectively.
 
 ### Take-Timing Information
 
-Take-timing information is present under the file `take_timings.csv`, which
-includes the following columns `take_id`, `start_idx` and `end_idx` (inclusive).
-`start_idx` and `end_idx` are indices into the timesync file.
+In **`takes.json`**, each take contains two key-value pairs `timesync_start_idx` and `timesync_end_idx`. These two values are integers that specify the position of the lines in the `capture/<capture_name>/timesync.csv`, and can be further used to locate the corresponding start and end timestamps for the take. The following is example code.
+
+```python
+start_idx = take["timesync_start_idx"]+1
+end_idx = take["timesync_end_idx"]-1
+# load the timesync.csv file into variable timesync
+start_timestamp = timesync.iloc[start_idx]["aria01_214-1_capture_timestamp_ns"]
+end_timestamp = timesync.iloc[end_idx]["aria01_214-1_capture_timestamp_ns"]
+
+```
