@@ -50,7 +50,7 @@ The different parts of the dataset include:
 
 The parts in **bold** refer to the **recommended set** (**default**). You can additionally filter based on:
 - Data relevant to a specific [benchmarks](../benchmarks): `--benchmarks <benchmark_name>`
-    - e.g. `--benchmarks keystep relations`
+    - e.g. `--benchmarks keystep relations taskgraph`
 - Dataset splits (train/val/test): `--splits <s1> <s2> ...`, e.g.
     - `--splits train` for data that only lies in the training set
 - Egocentric or exocentric related data (videos, trajectory)

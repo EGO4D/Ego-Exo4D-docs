@@ -44,7 +44,7 @@ respectively.
 
 ### Take-Timing Information
 
-In **`takes.json`**, each take contains two key-value pairs `timesync_start_idx` and `timesync_end_idx`. These two values are integers that specify the position of the lines in the `capture/<capture_name>/timesync.csv`, and can be further used to locate the corresponding start and end timestamps for the take. The following is example code.
+In **`takes.json`**, each take contains two key-value pairs `timesync_start_idx` and `timesync_end_idx`. These two values are integers that specify the position of the lines in the `capture/<capture_name>/timesync.csv`, and can be used to locate the corresponding start and end timestamps for the take. The following is the example code.
 
 ```python
 start_idx = take["timesync_start_idx"]+1
@@ -52,5 +52,4 @@ end_idx = take["timesync_end_idx"]-1
 # load the timesync.csv file into variable timesync
 start_timestamp = timesync.iloc[start_idx]["aria01_214-1_capture_timestamp_ns"]
 end_timestamp = timesync.iloc[end_idx]["aria01_214-1_capture_timestamp_ns"]
-
 ```
