@@ -6,7 +6,7 @@ Predict the 3D hand pose from the egocentric perspective.
 
 ## Introduction
 
-The ego hand pose task entails predicting the three-dimensional coordinates of the camera wearer’s hands from the egocentric frames. 
+The ego hand pose task entails predicting the three-dimensional coordinates of the camera wearer’s hands from the egocentric frames.
 
 ## Formal task definition
 
@@ -17,12 +17,14 @@ We explicitly exclude such information for this benchmark to promote the applica
 
 ## Metrics
 
-To cope with methods estimating wrist-origin and camera-origin hand pose, the ego hand pose baselines are evaluated according to both the MPJPE and the PA-MPJPE metrics. 
-The MPJPE is camera-relative while the PA-MPJPE calculates the average 3D joint distance after performing Procrustes Alignment on wrist-origin hand poses. 
+To cope with methods estimating wrist-origin and camera-origin hand pose, the ego hand pose baselines are evaluated according to both the MPJPE and the PA-MPJPE metrics.
+The MPJPE is camera-relative while the PA-MPJPE calculates the average 3D joint distance after performing Procrustes Alignment on wrist-origin hand poses.
 Both metrics are reported in millimeter (mm) unit.
 
 
 ## Baselines
+
+Baseline repo: https://github.com/EGO4D/ego-exo4d-egopose
 
 |            | Manual         |            | Manual+Auto   |            |
 |------------|----------------|------------|---------------|------------|
@@ -32,5 +34,4 @@ Both metrics are reported in millimeter (mm) unit.
 | HandOccNet | 59.30     | 18.70      | 50.00         | 17.90      |
 | POTTER     | 32.71         | 11.74      | 32.02         | 11.62      |
 
-Please refer to the section 13.D.2 in our submission for details of baselines in the table above. 
-
+Please refer to the section 13.D.2 in our submission for details of baselines in the table above.

@@ -20,7 +20,7 @@ This task involves recognizing fine-grained keysteps from procedural egocentric 
 Input: A trimmed egocentric video clip
 Output: Predicted keystep label
 ```
-  
+
 Note that at test time, the input to the model includes just the ego-view videos (RGB only). Exo-view videos, activity and scenario names, narrations, audio and associated metadata such as eye gaze, 3D point
 clouds, camera pose, and IMU information are excluded as inputs for inference (although we encourage exploring their potential utility in training) as our ultimate goal is a vision-centric approach that performs egocentric keystep recognition.
 
@@ -92,4 +92,4 @@ We measure top-1 keystep recognition accuracy (%)
 
 
 ### Baselines
-Coming Soon!
+Baseline repo: https://github.com/EGO4D/ego-exo4d-keystep/tree/main/fine_grained

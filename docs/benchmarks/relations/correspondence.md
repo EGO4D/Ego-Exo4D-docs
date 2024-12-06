@@ -13,7 +13,7 @@ Input:
 - Object segmentation track in Egocentric or Exocentric view
 
 Output:
-- Segmentation masks in the other view for the frames in which the object is visible in both views. 
+- Segmentation masks in the other view for the frames in which the object is visible in both views.
 
 **Note that the input to the model excludes semantic labels or names for the objects, camera pose information relating the two views, and IMU or active range sensor measurements.**
 
@@ -32,9 +32,4 @@ We do not use such information as we want to encourage the development of method
 
 ### Baseline
 
-Coming Soon!
-
-
-
-
-
+Baseline repo: https://github.com/EGO4D/ego-exo4d-relation

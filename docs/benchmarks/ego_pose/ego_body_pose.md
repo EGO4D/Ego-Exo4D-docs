@@ -20,6 +20,8 @@ Predict the 3D body pose from the egocentric perspective.
 
 ## Baselines
 
+Baseline repo: https://github.com/EGO4D/ego-exo4d-egopose
+
 | Method | MPJPE on VAL | MPJVE on VAL | MPJPE on TEST | MPJVE on TEST |
 |--------|--------------|--------------|---------------|---------------|
 | Static pose | 163.94 |   -  | 150.95 |   -  |
@@ -29,4 +31,4 @@ Predict the 3D body pose from the egocentric perspective.
 
 - Note: For EgoEgo and Kinpoly, we only use headset poses as input, and we use the pretrained model weights and convert the prediction results from SMPL to COCO keypoints as they do not support COCO keypoints directly.
 
-- Please refer to the section 13.D.1 in our submission for details of baselines in the table above. 
+- Please refer to the section 13.D.1 in our submission for details of baselines in the table above.
