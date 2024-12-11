@@ -95,7 +95,7 @@ We retrieve the VRS data including device calibration collected by Aria glasses 
  - VRS: <a href="https://facebookresearch.github.io/vrs/">VRS</a> is the file format used to store the Project Aria Glasses multimodal data. VRS Data is stored Stream and are identified with a unique StreamId. `VrsDataProvider` enables you to list and retrieve all VRS data and calibration data.
  - DeviceCalibration: an interface that can be used to retrieve Intrinsics for Image Stream data (i.e Camera data) - `CameraCalibration` and Extrinsics defined for all sensors - `SE3`.
 
-Project Aria glasses use 3D Coordinate Frame Conventions. You can find an overview of these conventions <a href="3D Coordinate Frame Conventions">here</a> where Central Pupil Frame (CPF) and 3D Coordinate frame and system conventions are covered. We use the projectaria_tools API for retrieving the DeviceCalibration and the POSE of each sensor.
+Project Aria glasses use 3D Coordinate Frame Conventions. You can find an overview of these conventions here (CPF) and 3D Coordinate frame and system conventions are covered. We use the projectaria_tools API for retrieving the DeviceCalibration and the POSE of each sensor.
 
 First of all, we load the VRS file of the sample take.
 
