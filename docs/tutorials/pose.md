@@ -259,7 +259,6 @@ show_results(projection_results)
 ```
 
 
-
 ![png](/img/pose_tutorial-0.png)
 
 
