@@ -1,6 +1,4 @@
----
-title: Gaze in Ego-Exo4D Dataset
----
+# Tutorial 1: Gaze in Ego-Exo4D Dataset
 
 Introduction of gaze data, and step-by-step guidance on how to reproject eye gaze to egocentric and exocentric views.
 
