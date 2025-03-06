@@ -1,5 +1,5 @@
 ---
-title: EgoExo4D Challenge 2025
+title: Ego4D and EgoExo4D Challenge 2025
 sidebar_position: 99
 ---
 
