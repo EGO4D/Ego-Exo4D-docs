@@ -11,7 +11,7 @@ At [EgoVis](https://egovis.github.io/cvpr26/) workshop during CVPR 2026, we will
 
 ### EgoPose Benchmark
 
-* Ego-Pose Body: Given an egocentric video, estimate the 3D body pose of the camera-wearer. Specifically, predict the 3D position of the 17 annotated body joints for each frame. [[github]](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/bodypose) [[tutorials]](https://docs.ego-exo4d-data.org/tutorials/)
+* [Ego-Pose Body](https://www.codabench.org/competitions/15376/): Given an egocentric video, estimate the 3D body pose of the camera-wearer. Specifically, predict the 3D position of the 17 annotated body joints for each frame. [[github]](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/bodypose) [[tutorials]](https://docs.ego-exo4d-data.org/tutorials/)
 
 ### Keystep Benchmark
 * [Procedure Understanding](https://www.codabench.org/competitions/14725/): The objective of this task is to infer a procedure's underlying structure from observing natural videos of subjects performing the procedure. [[github]](https://github.com/EGO4D/ego-exo4d-keystep/tree/main/procedure_understanding)
