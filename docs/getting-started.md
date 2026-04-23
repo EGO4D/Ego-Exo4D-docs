@@ -17,7 +17,7 @@ To review and execute the license agreement, go to [ego4d.dev/request/ego-exo4d]
 
 Note that the license agreement can be signed as an individual or on behalf of your institution. Typically, only institutional signatories at a director or executive level can agree to license terms on behalf of an entire organization.
 
-Once you have obtained your AWS access credentials, you can access the Ego4D dataset by following the [download steps](#download-dataset).
+Once you have obtained your AWS access credentials, you can access the Ego-Exo4D dataset by following the [download steps](#download-dataset).
 
 Note that your access credentials will expire in 14 days, so it's important to download the dataset locally and not consume it from AWS. If you need continued access to the dataset after your credentials expire, you can easily renew your license by requesting it again at [ego4d.dev/request/ego-exo4d](https://ego4d.dev/request/ego-exo4d). If previously approved, your access will be immediately re-activated.
 
@@ -28,7 +28,7 @@ Note that your access credentials will expire in 14 days, so it's important to d
 
 ## Download The Dataset {#download-dataset}
 
-You can download the dataset similar to that of Ego4D, using the [Downloader CLI](./download.md).
+You can download the dataset using the [Downloader CLI](./download.md) (shared with Ego4D).
 
 A summary of the steps to take are:
 1. [Obtain the EgoExo4D Downloader CLI](https://github.com/facebookresearch/Ego4d?tab=readme-ov-file#setup):
